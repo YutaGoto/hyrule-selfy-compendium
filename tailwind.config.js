@@ -17,6 +17,9 @@ module.exports = {
           violet: '#7928CA',
         },
       },
+      scale: {
+        450: '4.5',
+      },
       keyframes: ({ theme }) => ({
         rerender: {
           '0%': {
