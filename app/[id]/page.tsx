@@ -1,4 +1,3 @@
-import { Suspense } from 'react';
 import { notFound } from 'next/navigation';
 import { items } from '@/lib/items';
 import Image from 'next/image';
@@ -13,9 +12,9 @@ export default function Item({ params }: { params: { id: string } }) {
   return (
     <section>
       <div className="text-sky-300">
-        <div className="space-y-4">
-          <div className="flex space-x-1">
-            <div className="flex-initial w-96 h-96 relative overflow-hidden">
+        <div className="space-y-6">
+          <div className="grid grid-flow-row-dense lg:grid-cols-9 md:grid-cols-1 gap-3 justify-items-center">
+            <div className="lg:col-span-4 md:col-span-1 w-96 h-96 relative overflow-hidden">
               <Image
                 src={`/assets/images/${item.id}.jpg`}
                 alt={item.name}
@@ -29,7 +28,7 @@ export default function Item({ params }: { params: { id: string } }) {
               />
             </div>
 
-            <div className="flex-1">
+            <div className="lg:col-span-5 md:col-span-1">
               <div className="text-xl text-center mb-2">
                 {item.name} <span className="text-xs">No. {item.id}</span>
               </div>
@@ -39,7 +38,11 @@ export default function Item({ params }: { params: { id: string } }) {
                 <div className="mt-2 text-center">
                   <p className="text-2xl">主な生息地</p>
                   {item.locations.map((location) => {
-                    return <span className="text-xl">{location} </span>;
+                    return (
+                      <span key={location} className="text-xl">
+                        {location}{' '}
+                      </span>
+                    );
                   })}
                 </div>
               )}
@@ -48,7 +51,10 @@ export default function Item({ params }: { params: { id: string } }) {
                 <div className="mt-2 text-center">
                   {item.recoverableMaterials.map((material) => {
                     return (
-                      <span className="bg-indigo-100 text-indigo-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-indigo-900 dark:text-indigo-300">
+                      <span
+                        key={material}
+                        className="bg-indigo-100 text-indigo-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-indigo-900 dark:text-indigo-300"
+                      >
                         {material}
                       </span>
                     );
