@@ -11,10 +11,12 @@ const job = new Job({
     {
       name: "install dependencies",
       run: "pnpm i",
+      cacheDirectories: ["node_modules"],
     },
     {
       name: "Lint",
       run: "pnpm run lint",
+      cacheDirectories: ["node_modules"],
     },
   ],
 });
@@ -22,6 +24,6 @@ const job = new Job({
 export default new Pipeline([job], {
   on: {
     pullRequest: "all",
-    push: "all",
+    push: ["main"],
   },
 });
