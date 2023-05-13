@@ -22,6 +22,6 @@ const job = new Job({
 export default new Pipeline([job], {
   on: {
     pullRequest: "all",
-    push: ["main"],
+    push: "all",
   },
 });
