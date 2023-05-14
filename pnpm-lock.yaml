@@ -2,48 +2,48 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@heroicons/react':
-    specifier: 2.0.18
+    specifier: ^2.0.18
     version: 2.0.18(react@18.2.0)
   clsx:
-    specifier: 1.2.1
+    specifier: ^1.2.1
     version: 1.2.1
   next:
-    specifier: latest
+    specifier: ^13.4.2
     version: 13.4.2(@babel/core@7.21.8)(react-dom@18.2.0)(react@18.2.0)
   react:
-    specifier: 18.2.0
+    specifier: ^18.2.0
     version: 18.2.0
   react-dom:
-    specifier: 18.2.0
+    specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
   styled-components:
-    specifier: 6.0.0-beta.2
+    specifier: ^6.0.0-beta.2
     version: 6.0.0-beta.2(react-dom@18.2.0)(react@18.2.0)
   styled-jsx:
-    specifier: 5.1.0
+    specifier: ^5.1.0
     version: 5.1.0(@babel/core@7.21.8)(react@18.2.0)
   use-count-up:
-    specifier: 3.0.1
+    specifier: ^3.0.1
     version: 3.0.1(react@18.2.0)
 
 devDependencies:
   '@types/node':
-    specifier: 18.0.3
+    specifier: ^18.0.3
     version: 18.0.3
   '@types/react':
-    specifier: 18.0.15
+    specifier: ^18.0.15
     version: 18.0.15
   '@types/react-dom':
-    specifier: 18.0.6
+    specifier: ^18.0.6
     version: 18.0.6
   autoprefixer:
     specifier: ^10.4.14
     version: 10.4.14(postcss@8.4.23)
   eslint:
-    specifier: 8.19.0
+    specifier: ^8.19.0
     version: 8.19.0
   eslint-config-next:
-    specifier: latest
+    specifier: ^13.4.2
     version: 13.4.2(eslint@8.19.0)(typescript@4.7.4)
   postcss:
     specifier: ^8.4.23
@@ -58,7 +58,7 @@ devDependencies:
     specifier: ^3.3.2
     version: 3.3.2
   typescript:
-    specifier: 4.7.4
+    specifier: ^4.7.4
     version: 4.7.4
 
 packages:
