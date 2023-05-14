@@ -1,7 +1,13 @@
 import '@/styles/globals.css';
+
 import React from 'react';
+import { Footer } from '@/ui/Footer';
+import { Metadata } from 'next';
 import { Meta } from './meta';
-import { Footer } from './Footer';
+
+export const metadata: Metadata = {
+  description: 'ブレスオブザワイルドの自撮りハイラル図鑑',
+};
 
 export default function RootLayout({
   children,
@@ -20,7 +26,7 @@ export default function RootLayout({
             {children}
           </div>
         </div>
-        <Footer />
+        <Footer reactVersion="18.2.0" nextVersion="13.4.2" />
       </body>
     </html>
   );

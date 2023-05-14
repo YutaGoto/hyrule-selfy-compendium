@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { items } from '@/lib/items';
+import { Meta } from './meta';
 
 export default function Page() {
   return (
