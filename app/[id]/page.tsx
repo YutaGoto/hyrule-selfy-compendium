@@ -1,8 +1,15 @@
 import { notFound } from 'next/navigation';
-import { items } from '@/lib/items';
 import Image from 'next/image';
 
-export default function Item({ params }: { params: { id: string } }) {
+import { items } from '@/lib/items';
+
+interface ItemProps {
+  params: {
+    id: string;
+  };
+}
+
+export default function Item({ params }: ItemProps) {
   const item = items.find((x) => x.id === params.id);
 
   if (!item) {
