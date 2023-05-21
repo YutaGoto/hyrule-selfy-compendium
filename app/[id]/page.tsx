@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
+import { HeartIcon } from '@heroicons/react/24/solid';
 
 import { items } from '@/lib/items';
 
@@ -54,20 +55,44 @@ export default function Item({ params }: ItemProps) {
                 </div>
               )}
 
-              {item.recoverableMaterials && (
-                <div className="mt-2 text-center">
-                  {item.recoverableMaterials.map((material) => {
-                    return (
-                      <span
-                        key={material}
-                        className="bg-indigo-100 text-indigo-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-indigo-900 dark:text-indigo-300"
-                      >
-                        {material}
-                      </span>
-                    );
-                  })}
-                </div>
-              )}
+              <div className="flex flex-row justify-center space-x-4">
+                {item.recoverableMaterials && (
+                  <div className="mt-2 text-center">
+                    <p className="text-2xl">ドロップアイテム</p>
+                    {item.recoverableMaterials.map((material) => {
+                      return (
+                        <span
+                          key={material}
+                          className="bg-indigo-100 text-indigo-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-indigo-900 dark:text-indigo-300"
+                        >
+                          {material}
+                        </span>
+                      );
+                    })}
+                  </div>
+                )}
+
+                {item.heartsRecoverable && (
+                  <div className="mt-2 text-center">
+                    <p className="text-2xl">回復量</p>
+                    <div className="text-xl flex items-center justify-center">
+                      <div>
+                        <HeartIcon className="h-6 w-6" />
+                      </div>
+                      <div>{item.heartsRecoverable}</div>
+                    </div>
+                  </div>
+                )}
+
+                {item.cookingEffect && (
+                  <div className="mt-2 text-center">
+                    <p className="text-2xl">料理したときの効果</p>
+                    <div className="text-xl flex items-center justify-center">
+                      <div>{item.cookingEffect}</div>
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
