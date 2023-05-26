@@ -17,8 +17,8 @@ dependencies:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
   styled-components:
-    specifier: 6.0.0-rc.1
-    version: 6.0.0-rc.1(react-dom@18.2.0)(react@18.2.0)
+    specifier: 6.0.0-rc.2-4007
+    version: 6.0.0-rc.2-4007(react-dom@18.2.0)(react@18.2.0)
   styled-jsx:
     specifier: ^5.1.2
     version: 5.1.2(@babel/core@7.21.8)(react@18.2.0)
@@ -3626,7 +3626,6 @@ packages:
       nanoid: 3.3.6
       picocolors: 1.0.0
       source-map-js: 1.0.2
-    dev: true
 
   /prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
@@ -3948,9 +3947,9 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /styled-components@6.0.0-rc.1(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-v+VqSeqCQboUqSxTxIW/wmBYB0BGDBV30tTMWcUaicapSy0VYNmZanOcFCxyfbViY/Bk2h+VKURMytx2jaTrwA==}
-    engines: {node: '>= 14'}
+  /styled-components@6.0.0-rc.2-4007(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-MfdCEa1s5Qogv0XRkS1u4udh5mLRQR1jceyScjvg0uafQdICHnH81pi22EXRbG6Eqx+Cs3TCtwgOxIt7PTQBCQ==}
+    engines: {node: '>= 16'}
     peerDependencies:
       babel-plugin-styled-components: '>= 2'
       react: '>= 16.8.0'
@@ -3971,6 +3970,7 @@ packages:
       '@babel/traverse': 7.21.5
       '@emotion/unitless': 0.8.1
       css-to-react-native: 3.2.0
+      postcss: 8.4.23
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       shallowequal: 1.1.0
