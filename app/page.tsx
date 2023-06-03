@@ -22,9 +22,11 @@ export default function Page() {
                     alt={item.name}
                     style={{
                       objectPosition: '32px 18px',
+                      width: 'auto',
                     }}
                     width={192}
                     height={192}
+                    quality={100}
                     className="scale-450"
                   />
                 </div>
