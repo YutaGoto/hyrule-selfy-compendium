@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { HeartIcon } from '@heroicons/react/24/solid';
 
 import { items } from '@/lib/items';
+import { locationText } from 'utils/locationText';
 
 interface ItemProps {
   params: {
@@ -44,7 +45,7 @@ export default function Item({ params }: ItemProps) {
 
               {item.locations && (
                 <div className="mt-2 text-center">
-                  <p className="text-2xl">主な生息地</p>
+                  <p className="text-2xl">{locationText(item.category)}</p>
                   {item.locations.map((location) => {
                     return (
                       <span key={location} className="text-xl">
