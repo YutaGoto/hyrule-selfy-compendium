@@ -221,4 +221,144 @@ export const materials: Item[] = [
     heartsRecoverable: 0.5,
     cookingEffect: '特になし',
   },
+  {
+    id: '192',
+    category: 'materials',
+    name: 'マックスラディッシュ',
+    description:
+      '日当たりのよい草原に自生する珍しいカブ。料理に使うとハートが限界を超えて回復する。',
+    locations: ['ハイラル丘陵', '東ハテール'],
+    heartsRecoverable: 2.5,
+    cookingEffect: 'MAXハート',
+  },
+  {
+    id: '193',
+    category: 'materials',
+    name: '大マックスラディッシュ',
+    description:
+      '限界を超えて大きく育ったマックスラディッシュ。滋養強壮成分がとても豊富で、料理に使うとハートが限界をはるかに超えて回復する。',
+    locations: ['アッカレ高原', 'ラネール大水源'],
+    heartsRecoverable: 4,
+    cookingEffect: 'MAXハート',
+  },
+  {
+    id: '194',
+    category: 'materials',
+    name: 'ヒンヤリハーブ',
+    description:
+      'へブラやゲルドの標高の高い山地で見かけられる薬草の一種。葉に体を冷やす成分を持っており、料理に使うと耐暑効果を得る事ができる。',
+    locations: ['へブラ山脈', 'ゲルド高地'],
+    heartsRecoverable: 0,
+    cookingEffect: '暑さガード',
+  },
+  {
+    id: '195',
+    category: 'materials',
+    name: 'ポカポカハーブ',
+    description:
+      'ゲルド地方の気温の高い場所で育つ薬草の一種。実や葉は辛味成分が強く、料理に使うと寒さに強くなる効果を得る事ができる。',
+    locations: ['ゲルド砂漠', 'ハイラル丘陵'],
+    heartsRecoverable: 0,
+    cookingEffect: '寒さガード',
+  },
+  {
+    id: '196',
+    category: 'materials',
+    name: 'ビリビリハーブ',
+    description:
+      'ゲルド砂漠に多く自生している薬草の一種。電流を外へ逃がす特殊な繊維質を持ち、料理に使うと電気への耐性を得る事ができる。',
+    locations: ['ゲルド砂漠', 'ハイラル丘陵'],
+    heartsRecoverable: 0,
+    cookingEffect: 'エレキガード',
+  },
+  {
+    id: '197',
+    category: 'materials',
+    name: 'ゴーゴーニンジン',
+    description:
+      'カカリコ村でよく作られているニンジン。足腰を強くする効能があると言われており、調理して食べると移動速度が上がる。',
+    locations: ['カカリコ村'],
+    heartsRecoverable: 0.5,
+    cookingEffect: '移動力アップ',
+  },
+  {
+    id: '198',
+    category: 'materials',
+    name: 'ガッツニンジン',
+    description:
+      '薬草としても珍重されてきた貴重なニンジン。活力の源となる成分が大量に含まれており、調理するとがんばりゲージが限界を超えて増える。',
+    locations: ['ハイラル丘陵', 'フィローネ草原'],
+    heartsRecoverable: 2,
+    cookingEffect: 'MAXがんばり',
+  },
+  {
+    id: '199',
+    category: 'materials',
+    name: 'ヨロイカボチャ',
+    description:
+      '村の畑で作られるとても硬いカボチャ。料理に使うとカチコチ成分が効いて、防御力をかなり上げる効果がある。',
+    locations: ['カカリコ村'],
+    heartsRecoverable: 0.5,
+    cookingEffect: '防御アップ',
+  },
+  {
+    id: '200',
+    category: 'materials',
+    name: 'ゴーゴースミレ',
+    description:
+      '切り立った崖にも咲く生命力豊かな花。料理に使うと蓄えられた滋養成分によって移動速度が上がる効果を得られる。',
+    locations: ['ゲルド高地', 'へブラ山脈'],
+    heartsRecoverable: 0,
+    cookingEffect: '移動力アップ',
+  },
+  {
+    id: '201',
+    category: 'materials',
+    name: 'ツルギソウ',
+    description:
+      '葉や実にある鋭いトゲが特徴の薬草。一時的に筋力を増やす特殊な成分が含まれていて、料理に使うと攻撃力が増える効果が発揮される。',
+    locations: ['西ハテール', 'フィローネ草原'],
+    heartsRecoverable: 0,
+    cookingEffect: '攻撃アップ',
+  },
+  {
+    id: '202',
+    category: 'materials',
+    name: 'ヨロイソウ',
+    description:
+      'たとえ踏まれても折れないタフな薬草。その丈夫でしなやかな繊維質は料理して食べると、体幹を強化する効能があり防御力が増す。',
+    locations: ['アッカレ高原', 'ハイラル丘陵'],
+    heartsRecoverable: 0,
+    cookingEffect: '防御アップ',
+  },
+  {
+    id: '203',
+    category: 'materials',
+    name: 'しのび草',
+    description:
+      '主に森や草地に咲く花。夜になるとほのかに光を放つ。料理に使うと静けさを増やす効果が発揮される。',
+    locations: ['西ハテール', 'ラネール大水源'],
+    heartsRecoverable: 0,
+    cookingEffect: '静けさアップ',
+  },
+  {
+    id: '204',
+    category: 'materials',
+    name: '姫しずか',
+    description:
+      'ハイラル王国の姫が愛したと言われる可憐な花。以前より絶滅が危惧される種だが、近年まれに自生しているのを見かける事ができる。',
+    locations: ['ハイラル丘陵', '西ハテール'],
+    heartsRecoverable: 0,
+    cookingEffect: '静けさアップ',
+  },
+  {
+    id: '205',
+    category: 'materials',
+    name: 'ガンバリバチのハチミツ',
+    description:
+      '巣から採れるハチミツは栄養満点！その高栄養価により隠し味として使った料理は、がんばりゲージ回復の効果を持つ。',
+    locations: ['ハイラル平原', 'タバンタ辺境'],
+    heartsRecoverable: 2,
+    cookingEffect: 'がんばり回復',
+  },
 ];
