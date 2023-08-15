@@ -4,5 +4,7 @@
   "timezone": "Asia/Tokyo",
   "reviewers": ["YutaGoto"],
   "assignAutomerge": true,
+  "automerge": true,
+  "platformAutomerge": true,
   "rangeStrategy": "bump"
 }
