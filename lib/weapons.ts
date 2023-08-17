@@ -209,18 +209,20 @@ export const weapons: Item[] = [
     id: '223',
     category: 'weapons',
     name: '古代兵装・剣',
-    description: '失われた古の技術を刃にした片手剣。青く輝く刃は抜刀したときにだけ現れる。その切断力は一般的な金属の剣を遥かに凌ぐ。',
+    description:
+      '失われた古の技術を刃にした片手剣。青く輝く刃は抜刀したときにだけ現れる。その切断力は一般的な金属の剣を遥かに凌ぐ。',
     locations: ['不明'],
     properties: {
       type: 'sword',
       value: 40,
-    }
+    },
   },
   {
     id: '224',
     category: 'weapons',
     name: '錆びた剣',
-    description: 'はるかな昔、名のある剣士が使っていたであろう錆び付いた片手剣。一応使えるがすぐに壊れてしまう。',
+    description:
+      'はるかな昔、名のある剣士が使っていたであろう錆び付いた片手剣。一応使えるがすぐに壊れてしまう。',
     locations: ['ハイラル平原', 'オルディン峡谷'],
     properties: {
       type: 'sword',
@@ -231,44 +233,372 @@ export const weapons: Item[] = [
     id: '225',
     category: 'weapons',
     name: '近衛の剣',
-    description: '大厄災に対抗すべく古代の技術を使い、シーカー族が退魔の剣を模して造った武器。優れた攻撃力を得たが、耐久性に問題が残った。',
+    description:
+      '大厄災に対抗すべく古代の技術を使い、シーカー族が退魔の剣を模して造った武器。優れた攻撃力を得たが、耐久性に問題が残った。',
     locations: ['不明'],
     properties: {
       type: 'sword',
       value: 48,
-    }
+    },
   },
   {
     id: '226',
     category: 'weapons',
     name: '火炎の剣',
-    description: 'デスマウンテンの溶岩で鍛えたという魔法の剣。刀身の赤い輝きに満たされているとき、振るった軌跡に灼熱の炎を吹き出す。',
+    description:
+      'デスマウンテンの溶岩で鍛えたという魔法の剣。刀身の赤い輝きに満たされているとき、振るった軌跡に灼熱の炎を吹き出す。',
     locations: ['ハイラル平原', '東ハテール'],
     properties: {
       type: 'sword',
       value: 24,
-      }
+    },
   },
   {
     id: '227',
     category: 'weapons',
     name: '氷雪の剣',
-    description: 'ヘブラ地方、極寒の霊峰で鍛えたという魔法の剣。刀身の青い輝きに満たされているとき、冷気を発する刃が斬った相手を凍りつかせる。',
+    description:
+      'ヘブラ地方、極寒の霊峰で鍛えたという魔法の剣。刀身の青い輝きに満たされているとき、冷気を発する刃が斬った相手を凍りつかせる。',
     locations: ['ゲルド高地', 'ハイラル平原'],
     properties: {
       type: 'sword',
       value: 20,
-    }
+    },
   },
   {
     id: '228',
     category: 'weapons',
     name: '雷電の剣',
-    description: 'ハイラル丘陵の落雷に長くさらして鍛えた魔法の剣。金色の光が刀身に満ちているとき、振るうと電撃で相手を痺れさせることができる。',
+    description:
+      'ハイラル丘陵の落雷に長くさらして鍛えた魔法の剣。金色の光が刀身に満ちているとき、振るうと電撃で相手を痺れさせることができる。',
     locations: ['ハイラル平原', '西ハテール'],
     properties: {
       type: 'sword',
       value: 22,
-    }
+    },
+  },
+  {
+    id: '229',
+    category: 'weapons',
+    name: 'ボコこん棒',
+    description:
+      'ボコブリンがエモノをしとめる その一点のみに注力して作り出したこん棒。無理をするとすぐに壊れてしまう。',
+    locations: ['ハイラル平原', '西ハテール'],
+    properties: {
+      type: 'sword',
+      value: 4,
+    },
+  },
+  {
+    id: '230',
+    category: 'weapons',
+    name: 'トゲボコこん棒',
+    description:
+      '厳選した素材で作られた特別なボコブリンのこん棒。とがった骨が当たるとかなり痛い。',
+    locations: ['フィローネ草原', '東ハテール'],
+    properties: {
+      type: 'sword',
+      value: 12,
+    },
+  },
+  {
+    id: '231',
+    category: 'weapons',
+    name: '竜骨ボコこん棒',
+    description:
+      'こん棒に化石の骨を組み合わせた強力な武器。ボコブリンの中でも特に屈強な個体のみが持っているとされている。',
+    locations: ['ハイラル丘陵', 'ハテール海'],
+    properties: {
+      type: 'sword',
+      value: 24,
+    },
+  },
+  {
+    id: '232',
+    category: 'weapons',
+    name: 'リザルブーメラン',
+    description:
+      'リザルフォスが好んで使う湾曲した剣。直接斬りつけるだけでなくブーメランのように投げて使うこともできる。',
+    locations: ['ハイラル湖', 'ラネール湿原'],
+    properties: {
+      type: 'sword',
+      value: 14,
+    },
+  },
+  {
+    id: '233',
+    category: 'weapons',
+    name: '強化リザルブーメラン',
+    description:
+      '青リザルフォスが好んで使う剣。刃が二枚になり、通常のリザルブーメランよりも切り裂く力がUP。投げても手元に戻ってくる。',
+    locations: ['ゲルド砂漠', 'タバンタ辺境'],
+    properties: {
+      type: 'sword',
+      value: 24,
+    },
+  },
+  {
+    id: '234',
+    category: 'weapons',
+    name: '三又リザルブーメラン',
+    description:
+      '刃の数がさらに増え、攻撃力が高くなった剣。ブーメランとしても使えるが取り扱いが難しく、主に先頭に長けた黒リザルフォスが携行する。',
+    locations: ['へブラ山脈', 'アッカレ高原'],
+    properties: {
+      type: 'sword',
+      value: 36,
+    },
+  },
+  {
+    id: '235',
+    category: 'weapons',
+    name: 'ガーディアンナイフ',
+    description:
+      '小型ガーディアンが装備している剣。誇大な技術が使われた青い刀身を持つ。耐久性はあまり高くない。',
+    locations: ['オルディン峡谷', 'タバンタ辺境'],
+    properties: {
+      type: 'sword',
+      value: 20,
+    },
+  },
+  {
+    id: '236',
+    category: 'weapons',
+    name: 'ガーディアンナイフ＋',
+    description:
+      'より威力が強化されたガーディアンナイフ。高い切断力がさらに上昇しており、耐久性も若干改善している。',
+    locations: ['ゲルド高地', 'アッカレ高原'],
+    properties: {
+      type: 'sword',
+      value: 30,
+    },
+  },
+  {
+    id: '237',
+    category: 'weapons',
+    name: 'ガーディアンナイフ++',
+    description:
+      '最大限までに威力が強化されたガーディアンナイフ。ぶ厚い鎧すら切り裂く攻撃力を備えている。威力に合わせて刀身も大きくなっている。',
+    locations: ['へブラ山脈', 'アッカレ高原'],
+    properties: {
+      type: 'sword',
+      value: 40,
+    },
+  },
+  {
+    id: '238',
+    category: 'weapons',
+    name: 'ライネルの剣',
+    description:
+      'ライネルが携える金属製の剣。斬るというよりは叩き潰す目的で作られている。人間が扱うにはかなり重いが攻撃力は高い。',
+    locations: ['ラネール大水源', 'ハイラル平原'],
+    properties: {
+      type: 'sword',
+      value: 24,
+    },
+  },
+  {
+    id: '239',
+    category: 'weapons',
+    name: '獣王の剣',
+    description:
+      '刃が増えて攻撃力が増したライネルの剣。すれ違いざまに振りぬくことで敵を真っ二つにするといわれる。',
+    locations: ['ハイラル平原', 'ラネール大水源'],
+    properties: {
+      type: 'sword',
+      value: 36,
+    },
+  },
+  {
+    id: '240',
+    category: 'weapons',
+    name: '獣神の剣',
+    description:
+      '白髪のライネルが手にする凶悪な剣。その分厚く荒々しい刃はどんなに屈強な敵であっても、易々と叩き斬る攻撃力を持つ。',
+    locations: ['ハイラル平原', 'へブラ山脈'],
+    properties: {
+      type: 'sword',
+      value: 58,
+    },
+  },
+  {
+    id: '241',
+    category: 'weapons',
+    name: 'ファイアロッド',
+    description:
+      '古代の魔術師が作り上げたといわれている火の玉を発生させる魔法の杖。直接殴るとすぐに壊れてしまうので注意。',
+    locations: ['ゲルド高地', 'ハイラル大森林'],
+    properties: {
+      type: 'sword',
+      value: 5,
+    },
+  },
+  {
+    id: '242',
+    category: 'weapons',
+    name: 'メテオロッド',
+    description:
+      '古代の魔術師が禁呪で作り上げたといわれている火炎級を三つ同時に発生させる杖。込められた炎の力が尽きると壊れてしまう。',
+    locations: ['ハイラル平原', 'へブラ山脈'],
+    properties: {
+      type: 'sword',
+      value: 10,
+    },
+  },
+  {
+    id: '243',
+    category: 'weapons',
+    name: 'アイスロッド',
+    description:
+      'へブラ山脈の氷を精錬して作られたといわれる冷気を発生させる魔法の杖。直接攻撃には向かない。',
+    locations: ['ゲルド高地', 'オルディン峡谷'],
+    properties: {
+      type: 'sword',
+      value: 5,
+    },
+  },
+  {
+    id: '244',
+    category: 'weapons',
+    name: 'フリーズロッド',
+    description:
+      'ヘブラ山山頂の氷を精錬して作られたといわれる超低温の冷気を広範囲に発射する魔法の杖。込められた冷気が尽きると砕け散る。',
+    locations: ['ゲルド高地', 'へブラ山脈'],
+    properties: {
+      type: 'sword',
+      value: 10,
+    },
+  },
+  {
+    id: '245',
+    category: 'weapons',
+    name: 'エレキロッド',
+    description:
+      'ハイラル丘陵で落雷を宝珠に封じ込めたといわれる魔法の杖。電気の球を発射できる。打撃には適していない。',
+    locations: ['西ハテール', 'ハイラル丘陵'],
+    properties: {
+      type: 'sword',
+      value: 5,
+    },
+  },
+  {
+    id: '246',
+    category: 'weapons',
+    name: 'ボルテージロッド',
+    description:
+      'ハイラル丘陵で強烈な落雷を宝珠に封じ込めたといわれる魔法の杖。電気の球を三方に発射できる。込められた雷が尽きると壊れてしまう。',
+    locations: ['ハイラル平原', 'ハイラル丘陵'],
+    properties: {
+      type: 'sword',
+      value: 10,
+    },
+  },
+  {
+    id: '247',
+    category: 'weapons',
+    name: '首刈り刀',
+    description:
+      'イーガ団が使う片手剣。半月形の刃は人の首を取る為の形状といわれ、彼らの恐ろしさの象徴といえる。耐久性は低め。',
+    locations: ['ゲルド高地', 'ゲルド砂漠'],
+    properties: {
+      type: 'sword',
+      value: 16,
+    },
+  },
+  {
+    id: '248',
+    category: 'weapons',
+    name: '鬼円刃',
+    description:
+      'イーガ団によって作られた凶器。標的を確実に仕留めるために切り裂くことに特化した形状は、見た者を恐怖に陥れる。',
+    locations: ['不明'],
+    properties: {
+      type: 'sword',
+      value: 40,
+    },
+  },
+  {
+    id: '249',
+    category: 'weapons',
+    name: '一撃の剣',
+    description:
+      '一撃必殺でありながら自らも一撃で命を落とす剣。2度使うと剣が光を失い一撃で倒せなくなるが、しばらく待てばまた輝きを取り戻す。',
+    locations: ['不明'],
+    properties: {
+      type: 'sword',
+      value: '∞',
+    },
+  },
+  {
+    id: '250',
+    category: 'weapons',
+    name: 'ボコブリンの骨',
+    description:
+      '切り離されても動き続ける不気味な腕の骨。あまりポーチに入れておきたくない。古びてもろくなっているのですぐに壊れる。',
+    locations: ['ハイラル全土'],
+    properties: {
+      type: 'sword',
+      value: 5,
+    },
+  },
+  {
+    id: '251',
+    category: 'weapons',
+    name: 'リザルフォスの骨',
+    description:
+      '死してなお動き続けるスタルリザルフォスの骨。振り回せば武器として使えるがもろい。背負っているときも動きが少し気になる...',
+    locations: ['ハイラル全土'],
+    properties: {
+      type: 'sword',
+      value: 12,
+    },
+  },
+  {
+    id: '252',
+    category: 'weapons',
+    name: 'コログのうちわ',
+    description:
+      '木を伐り倒すと時々手に入る不思議な葉っぱ。一振りするだけで大きな風を巻き起こし、軽いものなら吹き飛ばすことができる。',
+    locations: ['ハイラル平原', '西ハテール'],
+    properties: {
+      type: 'sword',
+      value: 1,
+    },
+  },
+  {
+    id: '253',
+    category: 'weapons',
+    name: '畑のクワ',
+    description:
+      '土を掘り起こし畑をたがやすのに使われる農具。畑仕事に耐えられるような丈夫な作りをしており、使いようによっては十分 武器になる。',
+    locations: ['東ハテール', 'ハイラル平原'],
+    properties: {
+      type: 'sword',
+      value: 16,
+    },
+  },
+  {
+    id: '254',
+    category: 'weapons',
+    name: '船のオール',
+    description:
+      '漁船に備え付けられている道具。本来武器ではないが護身用には十分使える。水に強い木材で作られており結構丈夫。',
+    locations: ['東ハテール', 'ハテール海'],
+    properties: {
+      type: 'sword',
+      value: 14,
+    },
+  },
+  {
+    id: '255',
+    category: 'weapons',
+    name: '木こりのオノ',
+    description:
+      '山の木こりが愛用する木を切り倒す道具。素早く木を切り倒すことができる。',
+    locations: ['西ハテール', 'ハイラル平原'],
+    properties: {
+      type: 'sword',
+      value: 3,
+    },
   },
 ];

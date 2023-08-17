@@ -10,7 +10,7 @@ export type Item = {
   heartsRecoverable?: number;
   properties?: {
     type: string;
-    value: number;
+    value: number | '∞';
   };
   cookingEffect?: string;
 };
