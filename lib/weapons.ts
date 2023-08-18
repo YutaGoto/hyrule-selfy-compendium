@@ -601,4 +601,257 @@ export const weapons: Item[] = [
       value: 3,
     },
   },
+  {
+    id: '256',
+    category: 'weapons',
+    name: '達人のオノ',
+    description:
+      '戦いに特化した両刃のオノ。重量があり使いこなすのに熟練した技術が必要。そのためいつしか達人の名が付くようになった。',
+    locations: ['西ハテール', 'ゲルド高地'],
+    properties: {
+      type: 'sword',
+      value: 18,
+    },
+  },
+  {
+    id: '257',
+    category: 'weapons',
+    name: '鉄のハンマー',
+    description:
+      '鉄でできた大きな金づち。元々は鉱石を叩き割るのにつかわれていたが、武器としても結構強い。',
+    locations: ['オルディン峡谷', 'アッカレ高原'],
+    properties: {
+      type: 'sword',
+      value: 12,
+    },
+  },
+  {
+    id: '258',
+    category: 'weapons',
+    name: 'ビッグブーメラン',
+    description:
+      '両手で振るう必要があるほど巨大なブーメラン。狩猟用だったものを戦闘用に改良しており、湾曲した内側に刃がある。扱いが非常に難しい。',
+    locations: ['西ハテール', 'へブラ山脈'],
+    properties: {
+      type: 'sword',
+      value: 25,
+    },
+  },
+  {
+    id: '259',
+    category: 'weapons',
+    name: '旅人の両手剣',
+    description:
+      '各地を旅する冒険者が愛用する両手持ちの剣。魔物との戦いではその重さを生かし、敵の構えた盾を吹き飛ばすことができる。',
+    locations: ['ハイラル平原', '西ハテール'],
+    properties: {
+      type: 'sword',
+      value: 10,
+    },
+  },
+  {
+    id: '260',
+    category: 'weapons',
+    name: '兵士の両手剣',
+    description:
+      '戦闘用に改良された両手剣。大きく重いので扱いはむずかしいが、頑丈な作りで長く戦うことができる。',
+    locations: ['ハイラル平原', 'フィローネ草原'],
+    properties: {
+      type: 'sword',
+
+      value: 20,
+    },
+  },
+  {
+    id: '261',
+    category: 'weapons',
+    name: '騎士の両手剣',
+    description:
+      'ハイラル城を守っていた騎士の中でも特に力に自信がある者が携えていた大剣。刃の切れ味も洗礼されている。',
+    locations: ['ゲルド砂漠', 'タバンタ辺境'],
+    properties: {
+      type: 'sword',
+      value: 30,
+    },
+  },
+  {
+    id: '262',
+    category: 'weapons',
+    name: '王家の両手剣',
+    description:
+      'ハイラル王家の直属部隊に与えられた大剣。その刃から繰り出される強力な攻撃は、立ち向かう者の心まで砕いたと言われる。',
+    locations: ['タバンタ辺境', 'ゲルド砂漠'],
+    properties: {
+      type: 'sword',
+      value: 52,
+    },
+  },
+  {
+    id: '263',
+    category: 'weapons',
+    name: 'ゾーラの大剣',
+    description:
+      '特殊な金属を用いてゾーラ族が作った大剣。ゾーラは槍を好むためあまり使う者がいないが、美しい刀身の意匠で、ハイリア人には人気が高い。',
+    locations: ['ラネール大水源', 'ラネール湿原'],
+    properties: {
+      type: 'sword',
+      value: 22,
+    },
+  },
+  {
+    id: '264',
+    category: 'weapons',
+    name: '石打ち',
+    description:
+      '分厚く硬い金属で作られたゴロンの両手剣。刃はついておら斬れ味は全くないが、その硬度と重量で相手を叩き潰すことができる。',
+    locations: ['オルディン峡谷', 'オルディン山脈'],
+    properties: {
+      type: 'sword',
+      value: 15,
+    },
+  },
+  {
+    id: '265',
+    category: 'weapons',
+    name: '岩砕き',
+    description:
+      'ゴロンシティ周辺で採掘された希少な金属で作られた両手剣。先端に重心があり、遠心力と重量で敵を粉砕する武器。',
+    locations: ['オルディン峡谷', 'ハイラル平原'],
+    properties: {
+      type: 'sword',
+      value: 42,
+    },
+  },
+  {
+    id: '266',
+    category: 'weapons',
+    name: '巨岩砕き',
+    description:
+      '英傑ダルケルが携えていた最硬級の大剣。ダルケルはこの大剣を軽々と振るっていたが、人間が使いこなすにはかなりの熟練が必要。',
+    locations: ['オルディン峡谷'],
+    properties: {
+      type: 'sword',
+      value: 60,
+    },
+  },
+  {
+    id: '267',
+    category: 'weapons',
+    name: 'ゲルドの両手剣',
+    description:
+      'ゲルド族の兵士中でも剣術に優れた者だけが装備できる事を許された大剣。見た目よりも軽く作られており、扱いやすい。',
+    locations: ['ゲルド高地', 'ハイラル丘陵'],
+    properties: {
+      type: 'sword',
+      value: 28,
+    },
+  },
+  {
+    id: '268',
+    category: 'weapons',
+    name: '残心の太刀',
+    description:
+      'シーカー族にのみ伝わる片刃の剣。伝統的な技術で丁寧に鍛えられており、すばらしい斬れ味を持つ。野太刀とも呼ばれる。',
+    locations: ['西ハテール', 'ラネール大水源'],
+    properties: {
+      type: 'sword',
+      value: 32,
+    },
+  },
+  {
+    id: '269',
+    category: 'weapons',
+    name: '無心の大剣',
+    description:
+      'シーカー族の持つ刀造りの技術を両刃の剣に用いた珍しい武器。片刃の剣の扱いに慣れていないハイラルの騎士のために作られた。',
+    locations: ['西ハテール', 'ハイラル平原'],
+    properties: {
+      type: 'sword',
+      value: 50,
+    },
+  },
+  {
+    id: '270',
+    category: 'weapons',
+    name: '古代兵装・大剣',
+    description:
+      '古のシーカー族の技術が使われた両手剣。青い刃が刀身に沿って回転する特殊な構造をしており、高い切断力で敵を切り裂く。',
+    locations: ['不明'],
+    properties: {
+      type: 'sword',
+      value: 55,
+    },
+  },
+  {
+    id: '271',
+    category: 'weapons',
+    name: '錆びた両手剣',
+    description:
+      '長く放置されて錆び付いてしまった大剣。武器として使うことはできるが、耐久性は低く何度か使うと簡単に壊れてしまう。',
+    locations: ['ハイラル平原', 'オルディン峡谷'],
+    properties: {
+      type: 'sword',
+      value: 12,
+    },
+  },
+  {
+    id: '272',
+    category: 'weapons',
+    name: '近衛の両手剣',
+    description:
+      'シーカー族が古代技術の粋を集めて作った大剣。厄災から王国を守るために用意されたが、耐久性に難があったため実用性は低かった。',
+    locations: ['不明'],
+    properties: {
+      type: 'sword',
+      value: 72,
+    },
+  },
+  {
+    id: '273',
+    category: 'weapons',
+    name: '火炎の大剣',
+    description:
+      '古の時代にゴロンの鍛冶職人がデスマウンテンの炎を使って鍛えたといわれている魔法の剣。刀身が赤く輝いている時に振るえば炎を吹き出す。',
+    locations: ['ハイラル平原', 'オルディン峡谷'],
+    properties: {
+      type: 'sword',
+      value: 34,
+    },
+  },
+  {
+    id: '274',
+    category: 'weapons',
+    name: '氷雪の大剣',
+    description:
+      'へブラ山脈の永久凍土に眠る鉱石を精錬して作られたといわれる魔法の剣。刀身が青く輝いている時に振るえば冷気を放つ。',
+    locations: ['へブラ山脈', 'ハイラル平原'],
+    properties: {
+      type: 'sword',
+      value: 30,
+    },
+  },
+  {
+    id: '275',
+    category: 'weapons',
+    name: '雷電の大剣',
+    description:
+      '大昔のハイラル王家に仕えた鍛冶職人がハイラル丘陵の落雷を用いて鍛錬したと言われる魔法の剣。金色に輝いている時に雷撃を発する。',
+    locations: ['ハイラル平原', 'タバンタ辺境'],
+    properties: {
+      type: 'sword',
+      value: 32,
+    },
+  },
+  {
+    id: '276',
+    category: 'weapons',
+    name: 'ボコバット',
+    description:
+      'ボコブリンが本能のままに作った無骨なこん棒。当たり所によってはかなりの威力で構えた盾を吹っ飛ばすことができる。',
+    locations: ['ハイラル平原', '西ハテール'],
+    properties: {
+      type: 'sword',
+      value: 6,
+    },
+  },
 ];
