@@ -854,4 +854,158 @@ export const weapons: Item[] = [
       value: 6,
     },
   },
+  {
+    id: '277',
+    category: 'weapons',
+    name: 'トゲボコバット',
+    description: 'ボコブリンが攻撃力を高める工夫として動物の骨で作ったとげを付け足したボコバット。実際直撃すると結構なダメージを受ける。',
+    locations: ['フィローネ草原', '東ハテール'],
+    properties: {
+      type: 'sword',
+      value: 18,
+    }
+  },
+  {
+    id: '278',
+    category: 'weapons',
+    name: '竜骨ボコバット',
+    description: 'ボコバットに化石の骨を組み合わせたこん棒。強敵を殴り倒すのに十分な強度と攻撃力を持つ。ボコブリンの中でも一部の猛者だけが手にする。',
+    locations: ['ハイラル丘陵', 'ハテール海'],
+    properties: {
+      type: 'sword',
+      value: 36,
+    }
+  },
+  {
+    id: '279',
+    category: 'weapons',
+    name: 'モリブリンバット',
+    description: 'モリブリンが好んで使う簡素なこん棒。硬い木で作られているが雑な作りなため、すぐに壊れてしまう。',
+    locations: ['ゲルド高地', 'フィローネ草原'],
+    properties: {
+      type: 'sword',
+      value: 9,
+    },
+  },
+  {
+    id: '280',
+    category: 'weapons',
+    name: 'トゲモリブリンバット',
+    description: '改良されたモリブリンの両手武器。殴りつける面に動物の骨がくくりつけられており、相手に与えるダメージが格段に高まった。',
+    locations: ['ハイラル平原', 'アッカレ高原'],
+    properties: {
+      type: 'sword',
+      value: 27,
+    }
+  },
+  {
+    id: '281',
+    category: 'weapons',
+    name: '竜骨モリブリンバット',
+    description: '太古の獣の骨を取り付けたモリブリンバット。斧のように先端に重心がある作りとなっており、これを扱えるモリブリンは戦い慣れていて危険。',
+    locations: ['へブラ山脈', 'オルディン山脈'],
+    properties: {
+      type: 'sword',
+      value: 45,
+    }
+  },
+  {
+    id: '282',
+    category: 'weapons',
+    name: 'ガーディアンアクス',
+    description: '小型ガーディアンが装備する武器。幅広で薄い刀身は古代の力によって作られており、高い攻撃力を持つが構造的に壊れやすい。',
+    locations: ['ゲルド砂漠', 'ハイラル平原'],
+    properties: {
+      type: 'sword',
+      value: 30,
+    }
+  },
+  {
+    id: '283',
+    category: 'weapons',
+    name: 'ガーディアンアクス＋',
+    description: '出力強化されたガーディアンアクス。子の武器には戦闘だけでなく、障害物を焼き切り進路を確保する用途があったと考えられている。',
+    locations: ['アッカレ高原', 'ハイラル平原'],
+    properties: {
+      type: 'sword',
+      value: 45,
+    }
+  },
+  {
+    id: '284',
+    category: 'weapons',
+    name: 'ガーディアンアクス++',
+    description: '敵を一撃で両断するために、最大限まで出力が強化されたガーディアンアクス。金属製の武器では出しにくい高い切断力を古代技術が実現している。',
+    locations: ['へブラ山脈', 'ゲルド高地'],
+    properties: {
+      type: 'sword',
+      value: 60,
+    }
+  },
+  {
+    id: '285',
+    category: 'weapons',
+    name: 'ライネルの大剣',
+    description: 'ライネルが携える両手武器。剣というよりただの金属の塊といったほうが良いが、ライネルの力で振られると大抵のものを粉砕する凶器となる。',
+    locations: ['ゲルド高地', 'タバンタ辺境'],
+    properties: {
+      type: 'sword',
+      value: 36,
+    }
+  },
+  {
+    id: '286',
+    category: 'weapons',
+    name: '獣王の大剣',
+    description: '硬度の高い金属が先端に取り付けられ、打撃力と耐久性が増したライネルの両手武器。圧倒的な重量で盾や鎧ごと敵を叩き潰す。',
+    locations: ['ゲルド高地', 'へブラ山脈'],
+    properties: {
+      type: 'sword',
+      value: 54,
+    }
+  },
+  {
+    id: '287',
+    category: 'weapons',
+    name: '獣神の大剣',
+    description: 'デスマウンテン山頂から取れる特殊な金属を使うことによって桁外れな重さを持った両手武器。振り降ろされる一撃は比類なき破壊力を誇る。',
+    locations: ['へブラ山脈', 'オルディン山脈'],
+    properties: {
+      type: 'sword',
+      value: 78,
+    }
+  },
+  {
+    id: '288',
+    category: 'weapons',
+    name: '風斬り刀',
+    description: 'イーガ団の幹部が携える風変りな刀。熟練した使い手が精神統一して振り抜くと、その特殊な形状によって真空の刃が作り出される。',
+    locations: ['ゲルド高地', '西ハテール'],
+    properties: {
+      type: 'sword',
+      value: 40,
+    }
+  },
+  {
+    id: '289',
+    category: 'weapons',
+    name: 'モリブリンの骨',
+    description: '腕だけになっても動き続けるモリブリンの骨。長くて太い骨は武器として使うに十分な打撃力を持つが、非常にもろく壊れやすい。',
+    locations: ['ハイラル全土'],
+    properties: {
+      type: 'sword',
+      value: 15,
+    }
+  },
+  {
+    id: '290',
+    category: 'weapons',
+    name: '木のモップ',
+    description: '床の清掃に大活躍する掃除道具。職人による手作りのため丈夫にできている。武器としてもある程度使える。',
+    locations: ['東ハテール', 'ハイラル平原'],
+    properties: {
+      type: 'sword',
+      value: 5,
+    }
+  }
 ];
