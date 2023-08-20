@@ -1,10 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base"],
+  "extends": ["config:base", ":dependencyDashboardApproval"],
   "timezone": "Asia/Tokyo",
   "reviewers": ["YutaGoto"],
-  "assignAutomerge": true,
-  "automerge": true,
-  "platformAutomerge": true,
   "rangeStrategy": "bump"
 }
