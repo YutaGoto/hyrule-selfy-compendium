@@ -12,5 +12,6 @@ export type Item = {
     type: string;
     value: number | '∞';
   };
+  additionalEffect?: string;
   cookingEffect?: string;
 };
