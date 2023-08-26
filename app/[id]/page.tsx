@@ -1,9 +1,17 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-import { HeartIcon } from '@heroicons/react/24/solid';
+import {
+  HeartIcon,
+  ShieldCheckIcon,
+  WrenchIcon,
+  ChevronLeftIcon,
+  ChevronDoubleLeftIcon,
+  ChevronDoubleRightIcon,
+} from '@heroicons/react/24/solid';
 
 import { items } from '@/lib/items';
 import { locationText } from 'utils/locationText';
+import Link from 'next/link';
 
 interface ItemProps {
   params: {
@@ -13,6 +21,12 @@ interface ItemProps {
 
 export default function Item({ params }: ItemProps) {
   const item = items.find((x) => x.id === params.id);
+  const prevItem = items.find(
+    (x) => x.id === String(Number(params.id) - 1).padStart(3, '0'),
+  );
+  const nextItem = items.find(
+    (x) => x.id === String(Number(params.id) + 1).padStart(3, '0'),
+  );
 
   if (!item) {
     return notFound();
@@ -23,7 +37,7 @@ export default function Item({ params }: ItemProps) {
       <div className="text-sky-300">
         <div className="space-y-6">
           <div className="grid grid-flow-row-dense lg:grid-cols-9 md:grid-cols-1 gap-3 justify-items-center">
-            <div className="lg:col-span-4 md:col-span-1 w-96 h-96 relative overflow-hidden">
+            <div className="lg:col-span-4 md:col-span-1 lg:w-96 h-96 relative overflow-hidden">
               <Image
                 src={`/assets/images/${item.id}.jpg`}
                 alt={item.name}
@@ -41,7 +55,7 @@ export default function Item({ params }: ItemProps) {
               <div className="text-xl text-center mb-2">
                 {item.name} <span className="text-xs">No. {item.id}</span>
               </div>
-              <div className="text-xl">{item.description}</div>
+              <div className="text-xl break-all whitespace-pre-wrap">{item.description}</div>
 
               {item.locations && (
                 <div className="mt-2 text-center">
@@ -93,8 +107,63 @@ export default function Item({ params }: ItemProps) {
                     </div>
                   </div>
                 )}
+
+                {item.properties && (
+                  <div className="mt-2 text-center">
+                    <p className="text-2xl">性能</p>
+                    <div className="text-xl flex items-center justify-center">
+                      <div>
+                        {item.properties.type === 'sword' && (
+                          <WrenchIcon className="h-6 w-6" />
+                        )}
+                      </div>
+                      <div>
+                        {item.properties.type === 'shields' && (
+                          <ShieldCheckIcon className="h-6 w-6" />
+                        )}
+                      </div>
+                      <div>
+                        {item.properties.type === 'bow' && (
+                          <ChevronLeftIcon className="h-6 w-6" />
+                        )}
+                      </div>
+                      <div>{item.properties.value}</div>
+                    </div>
+                  </div>
+                )}
+
+                {item.additionalEffect && (
+                  <div className="mt-2 text-center">
+                    <p className="text-2xl">追加効果</p>
+                    <div className="text-xl flex items-center justify-center">
+                      <div>{item.additionalEffect}</div>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
+          </div>
+        </div>
+        <div className="my-6">
+          <div className="flex flex-row justify-center space-x-4">
+            {prevItem && (
+                <Link
+                  href={`/${prevItem.id}`}
+                  className="flex items-center justify-center border border-sky-300 p-3 hover:bg-sky-300 hover:text-black transition-colors ease-in delay-25"
+                >
+                  <span><ChevronDoubleLeftIcon className="h-6 w-6" /></span>
+                  <span>{prevItem.name}</span>
+                </Link>
+            )}
+            {nextItem && (
+                <Link
+                  href={`/${nextItem.id}`}
+                  className="flex items-center justify-center border border-sky-300 p-3 hover:bg-sky-300 hover:text-black transition-colors ease-in delay-25"
+                >
+                    <span>{nextItem.name}</span>
+                    <span><ChevronDoubleRightIcon className="h-6 w-6" /></span>
+                </Link>
+            )}
           </div>
         </div>
       </div>

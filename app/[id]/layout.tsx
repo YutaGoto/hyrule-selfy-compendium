@@ -10,12 +10,12 @@ export default function Layout({ children }: LayoutProps) {
     <div>
       <div>{children}</div>
 
-      <div className="my-6 mx-2">
+      <div className="my-8 mx-2">
         <Link
           href="/"
           className="text-sky-300 border border-sky-300 p-3 hover:bg-sky-300 hover:text-black transition-colors ease-in delay-75"
         >
-          戻る
+          一覧へ戻る
         </Link>
       </div>
     </div>
