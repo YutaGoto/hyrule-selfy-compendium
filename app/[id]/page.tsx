@@ -1,5 +1,8 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
+import Link from 'next/link';
+import { headers } from 'next/headers';
+import { Metadata } from 'next';
 import {
   HeartIcon,
   ShieldCheckIcon,
@@ -11,11 +14,40 @@ import {
 
 import { items } from '@/lib/items';
 import { locationText } from 'utils/locationText';
-import Link from 'next/link';
 
 interface ItemProps {
   params: {
     id: string;
+  };
+}
+
+export async function generateMetadata({
+  params,
+}: ItemProps): Promise<Metadata> {
+  const id = params.id;
+
+  const item = items.find((x) => x.id === id);
+  const filePath = id ? `/assets/images/${id}.jpg` : '/og-image.jpg';
+  const title = item
+    ? `${item.name} - 自撮りハイラル図鑑`
+    : '自撮りハイラル図鑑';
+
+  const headersInstance = headers();
+
+  return {
+    title: title,
+    description: 'ブレスオブザワイルドの自撮りハイラル図鑑',
+    openGraph: {
+      type: 'website',
+      images: [`https://${headersInstance.get('host')}${filePath}`],
+    },
+    twitter: {
+      title: title,
+      description: 'ブレスオブザワイルドの自撮りハイラル図鑑',
+      card: 'summary_large_image',
+      creator: '@gggooottto',
+      images: [`https://${headersInstance.get('host')}${filePath}`],
+    },
   };
 }
 
@@ -55,7 +87,9 @@ export default function Item({ params }: ItemProps) {
               <div className="text-xl text-center mb-2">
                 {item.name} <span className="text-xs">No. {item.id}</span>
               </div>
-              <div className="text-xl break-all whitespace-pre-wrap">{item.description}</div>
+              <div className="text-xl break-all whitespace-pre-wrap">
+                {item.description}
+              </div>
 
               {item.locations && (
                 <div className="mt-2 text-center">
@@ -147,22 +181,26 @@ export default function Item({ params }: ItemProps) {
         <div className="my-6">
           <div className="flex flex-row justify-center space-x-4">
             {prevItem && (
-                <Link
-                  href={`/${prevItem.id}`}
-                  className="flex items-center justify-center border border-sky-300 p-3 hover:bg-sky-300 hover:text-black transition-colors ease-in delay-25"
-                >
-                  <span><ChevronDoubleLeftIcon className="h-6 w-6" /></span>
-                  <span>{prevItem.name}</span>
-                </Link>
+              <Link
+                href={`/${prevItem.id}`}
+                className="flex items-center justify-center border border-sky-300 p-3 hover:bg-sky-300 hover:text-black transition-colors ease-in delay-25"
+              >
+                <span>
+                  <ChevronDoubleLeftIcon className="h-6 w-6" />
+                </span>
+                <span>{prevItem.name}</span>
+              </Link>
             )}
             {nextItem && (
-                <Link
-                  href={`/${nextItem.id}`}
-                  className="flex items-center justify-center border border-sky-300 p-3 hover:bg-sky-300 hover:text-black transition-colors ease-in delay-25"
-                >
-                    <span>{nextItem.name}</span>
-                    <span><ChevronDoubleRightIcon className="h-6 w-6" /></span>
-                </Link>
+              <Link
+                href={`/${nextItem.id}`}
+                className="flex items-center justify-center border border-sky-300 p-3 hover:bg-sky-300 hover:text-black transition-colors ease-in delay-25"
+              >
+                <span>{nextItem.name}</span>
+                <span>
+                  <ChevronDoubleRightIcon className="h-6 w-6" />
+                </span>
+              </Link>
             )}
           </div>
         </div>
