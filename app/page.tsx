@@ -1,7 +1,22 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { Metadata } from 'next';
+import { headers } from 'next/headers';
 import { items } from '@/lib/items';
-import { Meta } from './meta';
+
+export async function generateMetadata(): Promise<Metadata> {
+  const filePath = '/og-image.jpg';
+  const title = '自撮りハイラル図鑑';
+
+  const headersInstance = headers();
+  return {
+    title: title,
+    description: 'ブレスオブザワイルドの自撮りハイラル図鑑',
+    openGraph: {
+      images: [`https://${headersInstance.get('host')}${filePath}`],
+    },
+  };
+}
 
 export default function Page() {
   return (
