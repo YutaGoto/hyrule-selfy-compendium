@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { ButtonLink } from '@/ui/ButtonLink';
 import React from 'react';
 
 interface LayoutProps {
@@ -10,13 +10,10 @@ export default function Layout({ children }: LayoutProps) {
     <div>
       <div>{children}</div>
 
-      <div className="my-8 mx-2">
-        <Link
-          href="/"
-          className="text-sky-300 border border-sky-300 p-3 hover:bg-sky-300 hover:text-black transition-colors ease-in delay-75"
-        >
-          一覧へ戻る
-        </Link>
+      <div className="flex flex-row justify-start my-8 mx-2 text-sky-300">
+        <ButtonLink href="/">
+          <span>一覧へ戻る</span>
+        </ButtonLink>
       </div>
     </div>
   );
