@@ -1,6 +1,5 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-import Link from 'next/link';
 import { headers } from 'next/headers';
 import { Metadata } from 'next';
 import {
@@ -13,7 +12,9 @@ import {
 } from '@heroicons/react/24/solid';
 
 import { items } from '@/lib/items';
-import { locationText } from 'utils/locationText';
+import { locationText } from '@/utils/locationText';
+import { ButtonLink } from '@/ui/ButtonLink';
+import { Tag } from '@/ui/Tag';
 
 interface ItemProps {
   params: {
@@ -109,14 +110,7 @@ export default function Item({ params }: ItemProps) {
                   <div className="mt-2 text-center">
                     <p className="text-2xl">ドロップアイテム</p>
                     {item.recoverableMaterials.map((material) => {
-                      return (
-                        <span
-                          key={material}
-                          className="bg-indigo-100 text-indigo-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-indigo-900 dark:text-indigo-300"
-                        >
-                          {material}
-                        </span>
-                      );
+                      return <Tag key={material} text={material} />;
                     })}
                   </div>
                 )}
@@ -181,26 +175,20 @@ export default function Item({ params }: ItemProps) {
         <div className="my-6">
           <div className="flex flex-row justify-center space-x-4">
             {prevItem && (
-              <Link
-                href={`/${prevItem.id}`}
-                className="flex items-center justify-center border border-sky-300 p-3 hover:bg-sky-300 hover:text-black transition-colors ease-in delay-25"
-              >
+              <ButtonLink href={`/${prevItem.id}`}>
                 <span>
                   <ChevronDoubleLeftIcon className="h-6 w-6" />
                 </span>
                 <span>{prevItem.name}</span>
-              </Link>
+              </ButtonLink>
             )}
             {nextItem && (
-              <Link
-                href={`/${nextItem.id}`}
-                className="flex items-center justify-center border border-sky-300 p-3 hover:bg-sky-300 hover:text-black transition-colors ease-in delay-25"
-              >
+              <ButtonLink href={`/${nextItem.id}`}>
                 <span>{nextItem.name}</span>
                 <span>
                   <ChevronDoubleRightIcon className="h-6 w-6" />
                 </span>
-              </Link>
+              </ButtonLink>
             )}
           </div>
         </div>
