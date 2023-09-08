@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 import { headers } from 'next/headers';
 import { items } from '@/lib/items';
+import { SearchForm } from '@/ui/SearchForm';
 
 export async function generateMetadata(): Promise<Metadata> {
   const filePath = '/og-image.jpg';
@@ -18,10 +19,23 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default function Page() {
+export default function Page({searchParams}: {searchParams: any} ) {
+  const options = [
+    'ハイラル平原'
+  ]
+
+  const filteredItems = items.filter((item) => {
+    if (searchParams["location"]) {
+      return item.locations?.includes(searchParams["location"]);
+    }
+    return true;
+  })
+
   return (
+    <>
+    <SearchForm options={options} />
     <div className="grid xl:grid-cols-4 lg:grid-cols-3 grid-flow-row gap-4 justify-items-center text-sky-300 md:grid-cols-2 sm:grid-cols-1">
-      {items.map((item) => {
+      {filteredItems.map((item) => {
         return (
           <div key={item.id} className="w-64">
             <Link
@@ -51,5 +65,6 @@ export default function Page() {
         );
       })}
     </div>
+    </>
   );
 }
