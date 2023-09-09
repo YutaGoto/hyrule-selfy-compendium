@@ -91,7 +91,7 @@ export const bowsArrows: Item[] = [
     name: 'ゾーラの弓',
     description:
       'ゾーラ族が漁などに使う弓。射撃性能はそれほど高くないが特殊な金属で作られており、耐久性は見た目より優れている。',
-    locations: ['らねーり大水源', 'アッカレ高原'],
+    locations: ['ラネール大水源', 'アッカレ高原'],
     properties: {
       type: 'bow',
       value: 15,
@@ -271,7 +271,7 @@ export const bowsArrows: Item[] = [
     name: '獣王の弓',
     description:
       'より重厚な作りになったライネルの弓。本体だけではなく弦も強靭な金属で作られており、普通の人間にとっては引き絞る事すら難しい。',
-    locations: ['はいらるへい', '奥アッカレ'],
+    locations: ['ハイラル平原', '奥アッカレ'],
     properties: {
       type: 'bow',
       value: 20,
