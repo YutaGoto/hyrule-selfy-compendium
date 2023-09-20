@@ -9,6 +9,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+    // biome-ignore lint/a11y/useHtmlLang: must use html element.
     <html>
       <body className="overflow-y-scroll  bg-zinc-900">
         <div className="py-8 sm:mx-1 lg:mx-auto lg:max-w-6xl">
