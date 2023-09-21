@@ -31,5 +31,5 @@ jobs:
             ${{ runner.os }}-pnpm-store-
       - name: Install dependencies
         run: pnpm install
-      - name: run eslint
+      - name: run biome format check
         run: pnpm lint
