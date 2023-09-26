@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { Metadata } from 'next';
 import { headers } from 'next/headers';
 import { items } from '@/lib/items';
 import { SearchForm } from '@/ui/SearchForm';
+import { Linkable } from '@/ui/Linkable';
 
 export async function generateMetadata(): Promise<Metadata> {
   const filePath = '/og-image.jpg';
@@ -56,12 +56,12 @@ export default function Page({ searchParams }: Props) {
         {filteredItems.map((item) => {
           return (
             <div key={item.id} className="w-64">
-              <Link
+              <Linkable
                 href={`/${item.id}`}
                 key={item.name}
                 className="flex justify-center space-y-1 rounded-lg border border-white/10 px-4 py-3 hover:border-white/20"
               >
-                <div className="">
+                <div>
                   <div className="text-center">{item.name}</div>
                   <div className="overflow-hidden w-48 h-48 text-center">
                     <Image
@@ -78,7 +78,7 @@ export default function Page({ searchParams }: Props) {
                     />
                   </div>
                 </div>
-              </Link>
+              </Linkable>
             </div>
           );
         })}

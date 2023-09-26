@@ -44,9 +44,9 @@ export const SearchForm = () => {
         <select
           onChange={(e) => updateSearchParams('category', e.target.value)}
           value={selectedOptions.get('category') || ''}
-          className="w-full bg-zinc-900 text-sky-300 rounded-lg border border-sky-300 px-4 py-3 hover:border-white/20"
+          className="w-full bg-zinc-900 text-sky-300 rounded-lg border border-sky-300 px-4 py-3 hover:border-sky-700"
         >
-          <option value=""></option>
+          <option value="" />
           {categoryOptions.map((option) => (
             <option key={option.key} value={option.key}>
               {option.name}
@@ -59,9 +59,9 @@ export const SearchForm = () => {
         <select
           onChange={(e) => updateSearchParams('location', e.target.value)}
           value={selectedOptions.get('location') || ''}
-          className="w-full bg-zinc-900 text-sky-300 rounded-lg border border-sky-300 px-4 py-3 hover:border-white/20"
+          className="w-full bg-zinc-900 text-sky-300 rounded-lg border border-sky-300 px-4 py-3 hover:border-sky-700"
         >
-          <option value=""></option>
+          <option value="" />
           {locationOptions.map((option) => (
             <option key={option} value={option}>
               {option}
