@@ -1,6 +1,7 @@
 import '@/styles/globals.css';
 
 import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Footer } from '@/ui/Footer';
 
 export default function RootLayout({
@@ -21,6 +22,7 @@ export default function RootLayout({
           </div>
         </div>
         <Footer reactVersion="18.2.0" nextVersion="13.4.19" />
+        <Analytics />
       </body>
     </html>
   );
