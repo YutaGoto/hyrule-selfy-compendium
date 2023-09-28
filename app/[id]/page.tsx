@@ -13,7 +13,7 @@ import {
 
 import { items } from '@/lib/items';
 import { locationText } from '@/utils/locationText';
-import { ButtonLink } from '@/ui/ButtonLink';
+import { Button } from '@/ui/Button';
 import { Tag } from '@/ui/Tag';
 
 interface ItemProps {
@@ -175,20 +175,20 @@ export default function Item({ params }: ItemProps) {
         <div className="my-6">
           <div className="flex flex-row justify-center space-x-4">
             {prevItem && (
-              <ButtonLink href={`/${prevItem.id}`}>
+              <Button href={`/${prevItem.id}`}>
                 <span>
                   <ChevronDoubleLeftIcon className="h-6 w-6" />
                 </span>
                 <span>{prevItem.name}</span>
-              </ButtonLink>
+              </Button>
             )}
             {nextItem && (
-              <ButtonLink href={`/${nextItem.id}`}>
+              <Button href={`/${nextItem.id}`}>
                 <span>{nextItem.name}</span>
                 <span>
                   <ChevronDoubleRightIcon className="h-6 w-6" />
                 </span>
-              </ButtonLink>
+              </Button>
             )}
           </div>
         </div>

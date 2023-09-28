@@ -1,4 +1,4 @@
-import { ButtonLink } from '@/ui/ButtonLink';
+import { Linkable } from '@/ui/Linkable';
 import React from 'react';
 
 interface LayoutProps {
@@ -10,10 +10,10 @@ export default function Layout({ children }: LayoutProps) {
     <div>
       <div>{children}</div>
 
-      <div className="flex flex-row justify-start my-8 mx-2 text-sky-300">
-        <ButtonLink href="/">
+      <div className="flex flex-row justify-start my-8 mx-2">
+        <Linkable href="/" className="text-sky-300 hover:text-sky-700">
           <span>一覧へ戻る</span>
-        </ButtonLink>
+        </Linkable>
       </div>
     </div>
   );
