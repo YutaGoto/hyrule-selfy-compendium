@@ -1,14 +1,8 @@
-import '@/styles/globals.css';
+import '@/styles/globals.scss';
 
 import React from 'react';
-import { Kosugi } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import { Footer } from '@/ui/Footer';
-
-const kosugi = Kosugi({
-  weight: '400',
-  display: 'swap',
-});
 
 export default function RootLayout({
   children,
@@ -17,7 +11,7 @@ export default function RootLayout({
 }) {
   return (
     // biome-ignore lint/a11y/useHtmlLang: must use html element.
-    <html className={kosugi.className}>
+    <html>
       <body className="overflow-y-scroll bg-zinc-900">
         <div className="py-8 sm:mx-1 lg:mx-auto lg:max-w-6xl">
           <div className="rounded-xl border border-zinc-800 bg-black lg:px-8 lg:py-8 md:px-1 md:py-6">
