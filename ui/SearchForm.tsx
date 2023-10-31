@@ -3,15 +3,23 @@
 import { categories } from '@/lib/categories';
 import { locations } from '@/lib/locations';
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
-import { useCallback, useMemo } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 
 export const SearchForm = () => {
   const searchParams = useSearchParams();
   const pathName = usePathname();
   const router = useRouter();
+  const [searchText, setSearchText] = useState<string | null>(
+    searchParams.get('searchText'),
+  );
 
   const locationOptions = locations;
   const categoryOptions = categories;
+
+  const onChangeSearchText = (value: string) => {
+    setSearchText(value);
+    updateSearchParams('searchText', value);
+  };
 
   const selectedOptions = useMemo<URLSearchParams>(() => {
     const params = new URLSearchParams(searchParams);
@@ -68,6 +76,15 @@ export const SearchForm = () => {
             </option>
           ))}
         </select>
+      </label>
+
+      <label>
+        <span className="text-sky-300">フリーワード</span>
+        <input
+          onChange={(e) => onChangeSearchText(e.target.value)}
+          defaultValue={searchText}
+          className="w-full bg-zinc-900 text-sky-300 rounded-lg border border-sky-300 px-4 py-3 hover:border-sky-700"
+        />
       </label>
     </div>
   );
