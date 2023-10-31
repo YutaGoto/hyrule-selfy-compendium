@@ -13,7 +13,7 @@ dependencies:
     version: 1.0.2
   next:
     specifier: ^14.0.0
-    version: 14.0.0(react-dom@18.2.0)(react@18.2.0)(sass@1.68.0)
+    version: 14.0.0(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -47,8 +47,8 @@ devDependencies:
     specifier: ^8.4.31
     version: 8.4.31
   sass:
-    specifier: 1.68.0
-    version: 1.68.0
+    specifier: 1.69.5
+    version: 1.69.5
   tailwindcss:
     specifier: ^3.3.3
     version: 3.3.3
@@ -641,7 +641,7 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  /next@14.0.0(react-dom@18.2.0)(react@18.2.0)(sass@1.68.0):
+  /next@14.0.0(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5):
     resolution: {integrity: sha512-J0jHKBJpB9zd4+c153sair0sz44mbaCHxggs8ryVXSFBuBqJ8XdE9/ozoV85xGh2VnSjahwntBZZgsihL9QznA==}
     engines: {node: '>=18.17.0'}
     hasBin: true
@@ -663,7 +663,7 @@ packages:
       postcss: 8.4.31
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      sass: 1.68.0
+      sass: 1.69.5
       styled-jsx: 5.1.1(react@18.2.0)
       watchpack: 2.4.0
     optionalDependencies:
@@ -858,8 +858,8 @@ packages:
       queue-microtask: 1.2.3
     dev: true
 
-  /sass@1.68.0:
-    resolution: {integrity: sha512-Lmj9lM/fef0nQswm1J2HJcEsBUba4wgNx2fea6yJHODREoMFnwRpZydBnX/RjyXw2REIwdkbqE4hrTo4qfDBUA==}
+  /sass@1.69.5:
+    resolution: {integrity: sha512-qg2+UCJibLr2LCVOt3OlPhr/dqVHWOa9XtZf2OjbLs/T4VPSJ00udtgJxH3neXZm+QqX8B+3cU7RaLqp1iVfcQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
