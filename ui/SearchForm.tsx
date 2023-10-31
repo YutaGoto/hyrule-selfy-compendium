@@ -9,8 +9,8 @@ export const SearchForm = () => {
   const searchParams = useSearchParams();
   const pathName = usePathname();
   const router = useRouter();
-  const [searchText, setSearchText] = useState<string | null>(
-    searchParams.get('searchText'),
+  const [searchText, setSearchText] = useState<string>(
+    searchParams.get('searchText') || '',
   );
 
   const locationOptions = locations;
