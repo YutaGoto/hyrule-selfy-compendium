@@ -23,27 +23,41 @@ interface Props {
   searchParams: {
     location: string | undefined;
     category: string | undefined;
+    searchText: string | undefined;
   };
 }
 
 export default function Page({ searchParams }: Props) {
   const filteredItems = items.filter((item) => {
-    if (!searchParams['location'] && !searchParams['category']) {
+    // SearchParams(location, category, searchText)からアイテムを絞り込む
+    // どれも指定されていない場合は全てのアイテムを表示する
+    if (
+      !searchParams.location &&
+      !searchParams.category &&
+      !searchParams.searchText
+    ) {
       return true;
     }
 
-    if (searchParams['location'] && searchParams['category']) {
-      return (
-        item.locations?.includes(searchParams['location']) &&
-        item.category === searchParams['category']
-      );
+    // 指定された場所のアイテムのみ絞り込む
+    if (
+      searchParams.location &&
+      item.locations?.includes(searchParams.location)
+    ) {
+      return false;
     }
 
-    if (searchParams['location']) {
-      return item.locations?.includes(searchParams['location']);
+    // 指定された種類のアイテムのみ絞り込む
+    if (searchParams.category && searchParams.category !== item.category) {
+      return false;
     }
-    if (searchParams['category']) {
-      return item.category === searchParams['category'];
+
+    // 指定された検索ワードを含むアイテムのみ絞り込む
+    if (
+      searchParams.searchText &&
+      !item.name.includes(searchParams.searchText)
+    ) {
+      return false;
     }
 
     return true;
