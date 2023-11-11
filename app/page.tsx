@@ -42,7 +42,7 @@ export default function Page({ searchParams }: Props) {
     // 指定された場所のアイテムのみ絞り込む
     if (
       searchParams.location &&
-      item.locations?.includes(searchParams.location)
+      !item.locations?.flat().includes(searchParams.location)
     ) {
       return false;
     }
