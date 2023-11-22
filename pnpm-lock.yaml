@@ -32,8 +32,8 @@ devDependencies:
     specifier: 0.5.6
     version: 0.5.6(tailwindcss@3.3.5)
   '@types/node':
-    specifier: ^20.9.0
-    version: 20.9.0
+    specifier: ^20.9.4
+    version: 20.9.4
   '@types/react':
     specifier: ^18.2.37
     version: 18.2.37
@@ -294,8 +294,8 @@ packages:
       tailwindcss: 3.3.5
     dev: true
 
-  /@types/node@20.9.0:
-    resolution: {integrity: sha512-nekiGu2NDb1BcVofVcEKMIwzlx4NjHlcjhoxxKBNLtz15Y1z7MYf549DFvkHSId02Ax6kGwWntIBPC3l/JZcmw==}
+  /@types/node@20.9.4:
+    resolution: {integrity: sha512-wmyg8HUhcn6ACjsn8oKYjkN/zUzQeNtMy44weTJSM6p4MMzEOuKbA3OjJ267uPCOW7Xex9dyrNTful8XTQYoDA==}
     dependencies:
       undici-types: 5.26.5
     dev: true
