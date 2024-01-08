@@ -1,15 +1,13 @@
-# Workflow name
 name: "Chromatic Publish"
 
-# Event for the workflow
-on: push
+on:
+  push:
+    branches-ignore:
+      - "dependabot/**"
 
-# List of jobs
 jobs:
   test:
-    # Operating System
     runs-on: ubuntu-latest
-    # Job steps
     steps:
       - uses: actions/checkout@v4
         with:
