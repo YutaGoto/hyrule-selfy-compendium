@@ -21,7 +21,7 @@ jobs:
           version: 8
       - name: Install dependencies
         run: pnpm install
-      - uses: chromaui/action@v1
+      - uses: chromaui/action@v10
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}
