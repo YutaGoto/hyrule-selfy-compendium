@@ -68,8 +68,8 @@ devDependencies:
     specifier: ^10.4.16
     version: 10.4.16(postcss@8.4.33)
   chromatic:
-    specifier: 10.2.0
-    version: 10.2.0
+    specifier: 10.3.0
+    version: 10.3.0
   postcss:
     specifier: ^8.4.33
     version: 8.4.33
@@ -4884,8 +4884,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /chromatic@10.2.0:
-    resolution: {integrity: sha512-UDVGWa2Fx9CLCpwnyfvFHGr0vGF0ooB1TugUdgOcjC9pJXiFa67i7oaXMyTfVRIFxlt/QkqOJwdqDqqlLFffCw==}
+  /chromatic@10.3.0:
+    resolution: {integrity: sha512-NhNMrpGOn8clK6SpLiFe3HjrabUv6T0W548/qwKKj6rpMcRBWv16gVDERwKQ1uLiCiXHZM/gapytVazAkDhvPA==}
     hasBin: true
     dev: true
 
