@@ -32,7 +32,7 @@
     "@types/react": "^18.2.47",
     "@types/react-dom": "^18.2.18",
     "autoprefixer": "^10.4.16",
-    "chromatic": "10.2.0",
+    "chromatic": "10.3.1",
     "postcss": "^8.4.33",
     "sass": "1.69.7",
     "storybook": "^7.6.7",
