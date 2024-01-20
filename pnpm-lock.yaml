@@ -50,8 +50,8 @@ devDependencies:
     specifier: ^7.6.7
     version: 7.6.7(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
   '@storybook/test':
-    specifier: ^7.6.7
-    version: 7.6.7
+    specifier: ^7.6.10
+    version: 7.6.10
   '@tailwindcss/forms':
     specifier: 0.5.7
     version: 0.5.7(tailwindcss@3.4.1)
@@ -3274,14 +3274,14 @@ packages:
     resolution: {integrity: sha512-FcOqPAXACP0I3oJ/ws6/rrPT9WGhu915Cg8D02a9YxLo0DE9zI+a9A5gRGvmQ09fiWPukqI8ZAEoQEdWUKMQdQ==}
     dev: true
 
-  /@storybook/instrumenter@7.6.7:
-    resolution: {integrity: sha512-Q4NstXZKCk62MkP7jgpg5CRFmhszg9QdoN8CwffuUGtjQRADhmeRHgP4usB87Sg6Tq9MLSopAEqUZxlKKYeeag==}
+  /@storybook/instrumenter@7.6.10:
+    resolution: {integrity: sha512-9FYXW1CKXnZ7yYmy2A6U0seqJMe1F7g55J28Vslk3ZLoGATFJ2BR0eoQS+cgfBly6djehjaVeuV3IcUYGnQ/6Q==}
     dependencies:
-      '@storybook/channels': 7.6.7
-      '@storybook/client-logger': 7.6.7
-      '@storybook/core-events': 7.6.7
+      '@storybook/channels': 7.6.10
+      '@storybook/client-logger': 7.6.10
+      '@storybook/core-events': 7.6.10
       '@storybook/global': 5.0.0
-      '@storybook/preview-api': 7.6.7
+      '@storybook/preview-api': 7.6.10
       '@vitest/utils': 0.34.7
       util: 0.12.5
     dev: true
@@ -3649,13 +3649,13 @@ packages:
       - supports-color
     dev: true
 
-  /@storybook/test@7.6.7:
-    resolution: {integrity: sha512-6gyRIvtOSq/ODYjpUO8LgY1YlWoYINhhKtLKwZasbp8hQ0zkd2vRSWlVCwzsw28cZXo2UL92UNSgEVD1sf73Qg==}
+  /@storybook/test@7.6.10:
+    resolution: {integrity: sha512-dn/T+HcWOBlVh3c74BHurp++BaqBoQgNbSIaXlYDpJoZ+DzNIoEQVsWFYm5gCbtKK27iFd4n52RiQI3f6Vblqw==}
     dependencies:
-      '@storybook/client-logger': 7.6.7
-      '@storybook/core-events': 7.6.7
-      '@storybook/instrumenter': 7.6.7
-      '@storybook/preview-api': 7.6.7
+      '@storybook/client-logger': 7.6.10
+      '@storybook/core-events': 7.6.10
+      '@storybook/instrumenter': 7.6.10
+      '@storybook/preview-api': 7.6.10
       '@testing-library/dom': 9.3.3
       '@testing-library/jest-dom': 6.2.0
       '@testing-library/user-event': 14.3.0(@testing-library/dom@9.3.3)
