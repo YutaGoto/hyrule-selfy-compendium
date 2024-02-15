@@ -35,7 +35,7 @@
     "chromatic": "10.3.1",
     "postcss": "^8.4.33",
     "sass": "1.70.0",
-    "storybook": "^7.6.12",
+    "storybook": "^7.6.16",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
   }
