@@ -1,8 +1,8 @@
-import '@/styles/globals.scss';
+import "@/styles/globals.scss";
 
-import React from 'react';
-import { Analytics } from '@vercel/analytics/react';
-import { Footer } from '@/ui/Footer';
+import React from "react";
+import { Analytics } from "@vercel/analytics/react";
+import { Footer } from "@/ui/Footer";
 
 export default function RootLayout({
   children,
@@ -21,7 +21,7 @@ export default function RootLayout({
             {children}
           </div>
         </div>
-        <Footer reactVersion="18.2.0" nextVersion="14.0.3" />
+        <Footer reactVersion="18.2.0" nextVersion="14.1.0" />
         <Analytics />
       </body>
     </html>
