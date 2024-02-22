@@ -13,11 +13,11 @@
     "rules": {
       "recommended": true
     },
-    "ignore": [".next/*", "next-env.d.ts"]
+    "ignore": [".next/*", "test-results/*", "next-env.d.ts"]
   },
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
-    "ignore": [".next/*", "next-env.d.ts"]
+    "ignore": [".next/*", "test-results/*", "next-env.d.ts"]
   }
 }
