@@ -37,3 +37,7 @@ next-env.d.ts
 # tailwind
 .turbo
 styles/dist.css
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
