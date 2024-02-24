@@ -20,6 +20,6 @@ type Story = StoryObj<typeof Footer>;
 export const Default: Story = {
   args: {
     reactVersion: '18.2.0',
-    nextVersion: '14.0.3',
+    nextVersion: '14.1.0',
   },
 };

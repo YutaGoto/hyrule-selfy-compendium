@@ -7,7 +7,9 @@
     "lint": "biome format ./",
     "format": "biome format --write ./",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
@@ -19,6 +21,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.5.3",
+    "@chromatic-com/playwright": "0.6.0",
+    "@playwright/test": "1.41.2",
     "@storybook/addon-essentials": "^7.6.7",
     "@storybook/addon-interactions": "^7.6.12",
     "@storybook/addon-links": "^7.6.17",
