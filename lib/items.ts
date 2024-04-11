@@ -1,11 +1,11 @@
-import { Item } from 'types/Item';
-import { creatures } from './creatures';
-import { monsters } from './monsters';
-import { weapons } from './weapons';
+import type { Item } from 'types/Item';
 import { bowsArrows } from './bowsArrows';
+import { creatures } from './creatures';
+import { materials } from './materials';
+import { monsters } from './monsters';
 import { shields } from './shields';
 import { treasures } from './treasure';
-import { materials } from './materials';
+import { weapons } from './weapons';
 
 export const items: Item[] = [
   ...creatures,

@@ -2,7 +2,7 @@
 
 import { categories } from '@/lib/categories';
 import { locations } from '@/lib/locations';
-import { useSearchParams, useRouter, usePathname } from 'next/navigation';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useCallback, useMemo, useState } from 'react';
 
 export const SearchForm = () => {
@@ -23,16 +23,16 @@ export const SearchForm = () => {
 
   const selectedOptions = useMemo<URLSearchParams>(() => {
     const params = new URLSearchParams(searchParams);
-    locationOptions.forEach((option) => {
+    for (const option of locationOptions) {
       if (params.has(option)) {
         params.set('location', option);
       }
-    });
-    categoryOptions.forEach((option) => {
+    }
+    for (const option of categoryOptions) {
       if (params.has(option.key)) {
         params.set('category', option.key);
       }
-    });
+    }
     return params;
   }, [searchParams, locationOptions, categoryOptions]);
 
