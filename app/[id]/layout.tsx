@@ -1,5 +1,5 @@
 import { Linkable } from '@/ui/Linkable';
-import React from 'react';
+import type React from 'react';
 
 interface LayoutProps {
   children: React.ReactNode;

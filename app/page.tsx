@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import { Metadata } from 'next';
-import { headers } from 'next/headers';
 import { items } from '@/lib/items';
-import { SearchForm } from '@/ui/SearchForm';
 import { Linkable } from '@/ui/Linkable';
+import { SearchForm } from '@/ui/SearchForm';
+import type { Metadata } from 'next';
+import { headers } from 'next/headers';
+import Image from 'next/image';
 
 export async function generateMetadata(): Promise<Metadata> {
   const filePath = '/og-image.jpg';

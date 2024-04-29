@@ -1,20 +1,20 @@
-import { notFound } from 'next/navigation';
-import Image from 'next/image';
-import { headers } from 'next/headers';
-import { Metadata } from 'next';
 import {
+  ChevronDoubleLeftIcon,
+  ChevronDoubleRightIcon,
+  ChevronLeftIcon,
   HeartIcon,
   ShieldCheckIcon,
   WrenchIcon,
-  ChevronLeftIcon,
-  ChevronDoubleLeftIcon,
-  ChevronDoubleRightIcon,
 } from '@heroicons/react/24/solid';
+import type { Metadata } from 'next';
+import { headers } from 'next/headers';
+import Image from 'next/image';
+import { notFound } from 'next/navigation';
 
 import { items } from '@/lib/items';
-import { locationText } from '@/utils/locationText';
 import { Button } from '@/ui/Button';
 import { Tag } from '@/ui/Tag';
+import { locationText } from '@/utils/locationText';
 
 interface ItemProps {
   params: {

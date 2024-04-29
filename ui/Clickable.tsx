@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes, ReactNode } from 'react';
+import { ButtonHTMLAttributes, type ReactNode } from 'react';
 
 interface ClickableProps {
   onClick?: () => void;

@@ -1,6 +1,6 @@
-import { ReactNode } from 'react';
-import { Linkable } from './Linkable';
+import type { ReactNode } from 'react';
 import { Clickable } from './Clickable';
+import { Linkable } from './Linkable';
 
 interface ButtonLinkProps {
   href?: string;

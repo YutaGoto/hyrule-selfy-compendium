@@ -1,5 +1,5 @@
+import type { ChromaticConfig } from '@chromatic-com/playwright';
 import { defineConfig, devices } from '@playwright/test';
-import { ChromaticConfig } from '@chromatic-com/playwright';
 
 /**
  * See https://playwright.dev/docs/test-configuration.
