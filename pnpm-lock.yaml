@@ -38,8 +38,8 @@ devDependencies:
     specifier: ^7.6.17
     version: 7.6.17(@types/react-dom@18.2.23)(@types/react@18.2.74)(react-dom@18.2.0)(react@18.2.0)
   '@storybook/addon-interactions':
-    specifier: ^8.0.4
-    version: 8.0.4
+    specifier: ^8.0.9
+    version: 8.0.9
   '@storybook/addon-links':
     specifier: ^8.0.9
     version: 8.0.9(react@18.2.0)
@@ -3105,13 +3105,13 @@ packages:
       '@storybook/global': 5.0.0
     dev: true
 
-  /@storybook/addon-interactions@8.0.4:
-    resolution: {integrity: sha512-wTEOnVUbF1lNJxxocr5IKmpgnmwyO8YsQf6Baw3tTWCHAa/MaWWQYq1OA6CfFfmVGGRjv/w2GTuf1Vyq99O7mg==}
+  /@storybook/addon-interactions@8.0.9:
+    resolution: {integrity: sha512-AMIdNcyM6DDAWvMitBJMqp1iPZND8AXB4QT4VZHGMKG2ngHNKktriEKpTfcRkfKPGTJs9T+71dWfm6/R4tticw==}
     dependencies:
       '@storybook/global': 5.0.0
-      '@storybook/instrumenter': 8.0.4
-      '@storybook/test': 8.0.4
-      '@storybook/types': 8.0.4
+      '@storybook/instrumenter': 8.0.9
+      '@storybook/test': 8.0.9
+      '@storybook/types': 8.0.9
       polished: 4.2.2
       ts-dedent: 2.2.0
     transitivePeerDependencies:
@@ -3912,18 +3912,6 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: true
 
-  /@storybook/instrumenter@8.0.4:
-    resolution: {integrity: sha512-lkHv1na12oMTZvuDbzufgqrtFlV1XqdXrAAg7YXZOia/oMz6Z/XMldEqwLPUCLGVodbFJofrpE67Wtw8dNTDQg==}
-    dependencies:
-      '@storybook/channels': 8.0.4
-      '@storybook/client-logger': 8.0.4
-      '@storybook/core-events': 8.0.4
-      '@storybook/global': 5.0.0
-      '@storybook/preview-api': 8.0.4
-      '@vitest/utils': 1.4.0
-      util: 0.12.5
-    dev: true
-
   /@storybook/instrumenter@8.0.9:
     resolution: {integrity: sha512-Gw74dgpTU/2p7FG0s7DuVdqCbJ2MEcSuRJjDo7HcXRYcvWp7I6Ly+C0v7N5VaoS+kbBVerAhLKIHZgG/LZf1og==}
     dependencies:
@@ -4433,28 +4421,6 @@ packages:
     transitivePeerDependencies:
       - encoding
       - supports-color
-    dev: true
-
-  /@storybook/test@8.0.4:
-    resolution: {integrity: sha512-/uvE8Rtu7tIcuyQBUzKq7uuDCsjmADI18BApLdwo/qthmN8ERDxRSz0Ngj2gvBMQFv99At8ESi/xh6oFGu3rWg==}
-    dependencies:
-      '@storybook/client-logger': 8.0.4
-      '@storybook/core-events': 8.0.4
-      '@storybook/instrumenter': 8.0.4
-      '@storybook/preview-api': 8.0.4
-      '@testing-library/dom': 9.3.4
-      '@testing-library/jest-dom': 6.4.2
-      '@testing-library/user-event': 14.5.2(@testing-library/dom@9.3.4)
-      '@vitest/expect': 1.3.1
-      '@vitest/spy': 1.4.0
-      chai: 4.4.1
-      util: 0.12.5
-    transitivePeerDependencies:
-      - '@jest/globals'
-      - '@types/bun'
-      - '@types/jest'
-      - jest
-      - vitest
     dev: true
 
   /@storybook/test@8.0.9:
