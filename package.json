@@ -20,7 +20,7 @@
     "styled-jsx": "^5.1.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.6.3",
+    "@biomejs/biome": "1.7.3",
     "@chromatic-com/playwright": "0.6.6",
     "@playwright/test": "1.42.1",
     "@storybook/addon-essentials": "^7.6.17",
