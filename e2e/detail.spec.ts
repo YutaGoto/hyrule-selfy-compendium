@@ -7,15 +7,11 @@ test.describe('detail page', async () => {
     await expect(page).toHaveTitle('モリイノシシ - 自撮りハイラル図鑑');
   });
 
-  test('show the correct item name and ID', async ({page}) => {
+  test('show the correct item name and ID', async ({ page }) => {
     await page.goto('/010');
 
-    await expect(
-      page.getByText('モリイノシシ').first()
-    ).toBeVisible();
+    await expect(page.getByText('モリイノシシ').first()).toBeVisible();
 
-    await expect(
-      page.getByText('No. 010').first()
-    ).toBeVisible();
-  })
-})
+    await expect(page.getByText('No. 010').first()).toBeVisible();
+  });
+});
