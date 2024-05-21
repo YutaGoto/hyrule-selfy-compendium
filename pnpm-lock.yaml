@@ -29,8 +29,8 @@ devDependencies:
     specifier: 1.7.3
     version: 1.7.3
   '@chromatic-com/playwright':
-    specifier: 0.6.6
-    version: 0.6.6(@playwright/test@1.42.1)(@types/react-dom@18.3.0)(@types/react@18.3.2)(esbuild@0.20.2)(prettier@3.2.5)(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5)
+    specifier: 0.6.7
+    version: 0.6.7(@playwright/test@1.42.1)(@types/react-dom@18.3.0)(@types/react@18.3.2)(esbuild@0.20.2)(prettier@3.2.5)(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5)
   '@playwright/test':
     specifier: 1.42.1
     version: 1.42.1
@@ -75,7 +75,7 @@ devDependencies:
     version: 10.4.19(postcss@8.4.38)
   chromatic:
     specifier: 11.3.5
-    version: 11.3.5(@chromatic-com/playwright@0.6.6)
+    version: 11.3.5(@chromatic-com/playwright@0.6.7)
   postcss:
     specifier: ^8.4.38
     version: 8.4.38
@@ -1545,8 +1545,8 @@ packages:
     dev: true
     optional: true
 
-  /@chromatic-com/playwright@0.6.6(@playwright/test@1.42.1)(@types/react-dom@18.3.0)(@types/react@18.3.2)(esbuild@0.20.2)(prettier@3.2.5)(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5):
-    resolution: {integrity: sha512-bv+Wid9c12gzlbXUsPP8WgEQWuYPy3yrA5BEE7M1BSKzNo8z2hlEjrtyoLss6jx1fF2gvQcvzCg+KhPHOaeC9A==}
+  /@chromatic-com/playwright@0.6.7(@playwright/test@1.42.1)(@types/react-dom@18.3.0)(@types/react@18.3.2)(esbuild@0.20.2)(prettier@3.2.5)(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5):
+    resolution: {integrity: sha512-XdD2dATBZJR9a34ZCYif0QXR2hiuvudVZZjJxoF2dICHZ9KR/d0QVKAr5Qs0Zxgwulxuh0/2J+yGofIepTrKyw==}
     hasBin: true
     peerDependencies:
       '@playwright/test': ^1.0.0
@@ -4712,7 +4712,7 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /chromatic@11.3.5(@chromatic-com/playwright@0.6.6):
+  /chromatic@11.3.5(@chromatic-com/playwright@0.6.7):
     resolution: {integrity: sha512-M3xCyoEIjdcsXX3NhN60joXxEthy+wxNEcsCMM0u9u8Yna7tJvwvOsJStbOJDwEBo6TdIKckARN3BbArpduFbA==}
     hasBin: true
     peerDependencies:
@@ -4724,7 +4724,7 @@ packages:
       '@chromatic-com/playwright':
         optional: true
     dependencies:
-      '@chromatic-com/playwright': 0.6.6(@playwright/test@1.42.1)(@types/react-dom@18.3.0)(@types/react@18.3.2)(esbuild@0.20.2)(prettier@3.2.5)(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5)
+      '@chromatic-com/playwright': 0.6.7(@playwright/test@1.42.1)(@types/react-dom@18.3.0)(@types/react@18.3.2)(esbuild@0.20.2)(prettier@3.2.5)(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5)
     dev: true
 
   /chrome-trace-event@1.0.3:
