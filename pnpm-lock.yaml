@@ -74,8 +74,8 @@ devDependencies:
     specifier: ^10.4.19
     version: 10.4.19(postcss@8.4.38)
   chromatic:
-    specifier: 11.3.5
-    version: 11.3.5(@chromatic-com/playwright@0.6.7)
+    specifier: 11.4.0
+    version: 11.4.0(@chromatic-com/playwright@0.6.7)
   postcss:
     specifier: ^8.4.38
     version: 8.4.38
@@ -4712,8 +4712,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /chromatic@11.3.5(@chromatic-com/playwright@0.6.7):
-    resolution: {integrity: sha512-M3xCyoEIjdcsXX3NhN60joXxEthy+wxNEcsCMM0u9u8Yna7tJvwvOsJStbOJDwEBo6TdIKckARN3BbArpduFbA==}
+  /chromatic@11.4.0(@chromatic-com/playwright@0.6.7):
+    resolution: {integrity: sha512-/O6OwEUckqKTBGbm9KvYsR/eKCXy4s2eelO38yyfimBIJiL8+TS/pVnBqdtzUqO2hVK4GjrFiea9CnZUG9Akzw==}
     hasBin: true
     peerDependencies:
       '@chromatic-com/cypress': ^0.*.* || ^1.0.0
