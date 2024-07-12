@@ -58,8 +58,8 @@ importers:
         specifier: ^8.1.11
         version: 8.1.11(prettier@3.2.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.5.3)
       '@storybook/test':
-        specifier: ^8.1.11
-        version: 8.1.11
+        specifier: ^8.2.2
+        version: 8.2.2(storybook@8.2.2(@babel/preset-env@7.24.5(@babel/core@7.24.5)))
       '@tailwindcss/forms':
         specifier: 0.5.7
         version: 0.5.7(tailwindcss@3.4.3)
@@ -1617,6 +1617,11 @@ packages:
   '@storybook/instrumenter@8.1.11':
     resolution: {integrity: sha512-r/U9hcqnodNMHuzRt1g56mWrVsDazR85Djz64M3KOwBhrTj5d46DF4/EE80w/5zR5JOrT7p8WmjJRowiVteOCQ==}
 
+  '@storybook/instrumenter@8.2.2':
+    resolution: {integrity: sha512-refwnHqKHhya45MgqakhMG0jKhTiEIAl0aOwAaQy9+zf9ncMIYQAXRQsSZ2Z188lFWE24wbeHKteb62a5ZfWwQ==}
+    peerDependencies:
+      storybook: ^8.2.2
+
   '@storybook/manager-api@8.1.11':
     resolution: {integrity: sha512-QSgwKfAw01K9YvvZj30iGBMgQ4YaCT3vojmttuqdH5ukyXkiO7pENLJj4Y+alwUeSi0g+SJeadCI3PXySBHOGg==}
 
@@ -1716,6 +1721,11 @@ packages:
 
   '@storybook/test@8.1.11':
     resolution: {integrity: sha512-k+V3HemF2/I8fkRxRqM8uH8ULrpBSAAdBOtWSHWLvHguVcb2YA4g4kKo6tXBB9256QfyDW4ZiaAj0/9TMxmJPQ==}
+
+  '@storybook/test@8.2.2':
+    resolution: {integrity: sha512-X2qAKErjTh1X7XLAZqCMtU0ZK8JuwdKmgiqU0oXWxIDmCX6/Dm9ZIcdMZHs/S+K/UnIByjNlQpTShLVfRUeN1w==}
+    peerDependencies:
+      storybook: ^8.2.2
 
   '@storybook/theming@8.1.11':
     resolution: {integrity: sha512-Chn/opjO6Rl1isNobutYqAH2PjKNkj09YBw/8noomk6gElSa3JbUTyaG/+JCHA6OG/9kUsqoKDb5cZmAKNq/jA==}
@@ -6631,7 +6641,7 @@ snapshots:
       '@radix-ui/react-dialog': 1.0.5(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-slot': 1.0.2(@types/react@18.3.3)(react@18.3.1)
       '@storybook/client-logger': 8.1.11
-      '@storybook/csf': 0.1.7
+      '@storybook/csf': 0.1.11
       '@storybook/global': 5.0.0
       '@storybook/icons': 1.2.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/theming': 8.1.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -6720,12 +6730,12 @@ snapshots:
 
   '@storybook/core-events@8.1.11':
     dependencies:
-      '@storybook/csf': 0.1.7
+      '@storybook/csf': 0.1.11
       ts-dedent: 2.2.0
 
   '@storybook/core-events@8.1.9':
     dependencies:
-      '@storybook/csf': 0.1.7
+      '@storybook/csf': 0.1.11
       ts-dedent: 2.2.0
 
   '@storybook/core-server@8.1.9(prettier@3.2.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
@@ -6738,7 +6748,7 @@ snapshots:
       '@storybook/channels': 8.1.9
       '@storybook/core-common': 8.1.9(prettier@3.2.5)
       '@storybook/core-events': 8.1.9
-      '@storybook/csf': 0.1.7
+      '@storybook/csf': 0.1.11
       '@storybook/csf-tools': 8.1.9
       '@storybook/docs-mdx': 3.1.0-next.0
       '@storybook/global': 5.0.0
@@ -6839,7 +6849,7 @@ snapshots:
       '@babel/parser': 7.24.5
       '@babel/traverse': 7.24.5
       '@babel/types': 7.24.5
-      '@storybook/csf': 0.1.7
+      '@storybook/csf': 0.1.11
       '@storybook/types': 8.1.11
       fs-extra: 11.2.0
       recast: 0.23.7
@@ -6853,7 +6863,7 @@ snapshots:
       '@babel/parser': 7.24.5
       '@babel/traverse': 7.24.5
       '@babel/types': 7.24.5
-      '@storybook/csf': 0.1.7
+      '@storybook/csf': 0.1.11
       '@storybook/types': 8.1.9
       fs-extra: 11.2.0
       recast: 0.23.7
@@ -6903,12 +6913,19 @@ snapshots:
       '@vitest/utils': 1.6.0
       util: 0.12.5
 
+  '@storybook/instrumenter@8.2.2(storybook@8.2.2(@babel/preset-env@7.24.5(@babel/core@7.24.5)))':
+    dependencies:
+      '@storybook/global': 5.0.0
+      '@vitest/utils': 1.6.0
+      storybook: 8.2.2(@babel/preset-env@7.24.5(@babel/core@7.24.5))
+      util: 0.12.5
+
   '@storybook/manager-api@8.1.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@storybook/channels': 8.1.11
       '@storybook/client-logger': 8.1.11
       '@storybook/core-events': 8.1.11
-      '@storybook/csf': 0.1.7
+      '@storybook/csf': 0.1.11
       '@storybook/global': 5.0.0
       '@storybook/icons': 1.2.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/router': 8.1.11
@@ -6929,7 +6946,7 @@ snapshots:
       '@storybook/channels': 8.1.9
       '@storybook/client-logger': 8.1.9
       '@storybook/core-events': 8.1.9
-      '@storybook/csf': 0.1.7
+      '@storybook/csf': 0.1.11
       '@storybook/global': 5.0.0
       '@storybook/icons': 1.2.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/router': 8.1.9
@@ -7084,7 +7101,7 @@ snapshots:
       '@storybook/channels': 8.1.11
       '@storybook/client-logger': 8.1.11
       '@storybook/core-events': 8.1.11
-      '@storybook/csf': 0.1.7
+      '@storybook/csf': 0.1.11
       '@storybook/global': 5.0.0
       '@storybook/types': 8.1.11
       '@types/qs': 6.9.15
@@ -7101,7 +7118,7 @@ snapshots:
       '@storybook/channels': 8.1.9
       '@storybook/client-logger': 8.1.9
       '@storybook/core-events': 8.1.9
-      '@storybook/csf': 0.1.7
+      '@storybook/csf': 0.1.11
       '@storybook/global': 5.0.0
       '@storybook/types': 8.1.9
       '@types/qs': 6.9.15
@@ -7205,7 +7222,7 @@ snapshots:
 
   '@storybook/server@8.1.9':
     dependencies:
-      '@storybook/csf': 0.1.7
+      '@storybook/csf': 0.1.11
       '@storybook/csf-tools': 8.1.9
       '@storybook/global': 5.0.0
       '@storybook/preview-api': 8.1.9
@@ -7243,6 +7260,24 @@ snapshots:
       '@testing-library/user-event': 14.5.2(@testing-library/dom@10.1.0)
       '@vitest/expect': 1.6.0
       '@vitest/spy': 1.6.0
+      util: 0.12.5
+    transitivePeerDependencies:
+      - '@jest/globals'
+      - '@types/bun'
+      - '@types/jest'
+      - jest
+      - vitest
+
+  '@storybook/test@8.2.2(storybook@8.2.2(@babel/preset-env@7.24.5(@babel/core@7.24.5)))':
+    dependencies:
+      '@storybook/csf': 0.1.11
+      '@storybook/instrumenter': 8.2.2(storybook@8.2.2(@babel/preset-env@7.24.5(@babel/core@7.24.5)))
+      '@testing-library/dom': 10.1.0
+      '@testing-library/jest-dom': 6.4.5
+      '@testing-library/user-event': 14.5.2(@testing-library/dom@10.1.0)
+      '@vitest/expect': 1.6.0
+      '@vitest/spy': 1.6.0
+      storybook: 8.2.2(@babel/preset-env@7.24.5(@babel/core@7.24.5))
       util: 0.12.5
     transitivePeerDependencies:
       - '@jest/globals'
