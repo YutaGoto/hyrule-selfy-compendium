@@ -1,7 +1,8 @@
-# Next.js + Turbopack App Directory Playground
+# Hyrule SelfyCompendium
 
 [![Chromatic Publish](https://github.com/YutaGoto/hyrule-selfy-compendium/actions/workflows/chromatic.yml/badge.svg)](https://github.com/YutaGoto/hyrule-selfy-compendium/actions/workflows/chromatic.yml)
 [![CI](https://github.com/YutaGoto/hyrule-selfy-compendium/actions/workflows/lint.yml/badge.svg)](https://github.com/YutaGoto/hyrule-selfy-compendium/actions/workflows/lint.yml)
+[![Formatted with Biome](https://img.shields.io/badge/Formatted_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev/)
 
 [Turbopack](https://turbo.build/pack) is a new incremental bundler optimized for JavaScript and TypeScript, written in Rust by the creators of Webpack and Next.js at [Vercel](https://vercel.com). On large applications Turbopack updates 10x faster than Vite and 700x faster than Webpack ([benchmark](https://turbo.build/pack/docs/benchmarks)). For the biggest applications the difference grows even more stark with updates up to 20x faster than Vite.
 
@@ -11,8 +12,8 @@ This playground is a mirror of the [Next.js v13 App Directory Playground](https:
 
 ## Running Locally
 
-1. Install dependencies: `yarn`
-1. Start the dev server: `yarn dev`
+1. Install dependencies: `pnpm install`
+2. Start the dev server: `pnpm dev`
 
 **Note:** The playground uses [Tailwind CSS](https://tailwindcss.com) via [PostCSS](https://turbo.build/pack/docs/features/css#postcss).
 
