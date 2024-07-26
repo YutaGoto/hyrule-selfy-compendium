@@ -50,6 +50,7 @@ export const SearchForm = () => {
       <label>
         <span className="text-sky-300">種類</span>
         <select
+          name="category"
           onChange={(e) => updateSearchParams('category', e.target.value)}
           value={selectedOptions.get('category') || ''}
           className="w-full bg-zinc-900 text-sky-300 rounded-lg border border-sky-300 px-4 py-3 hover:border-sky-700"
@@ -65,6 +66,7 @@ export const SearchForm = () => {
       <label>
         <span className="text-sky-300">場所</span>
         <select
+          name="location"
           onChange={(e) => updateSearchParams('location', e.target.value)}
           value={selectedOptions.get('location') || ''}
           className="w-full bg-zinc-900 text-sky-300 rounded-lg border border-sky-300 px-4 py-3 hover:border-sky-700"
@@ -81,6 +83,7 @@ export const SearchForm = () => {
       <label>
         <span className="text-sky-300">フリーワード</span>
         <input
+          name="freeword"
           onChange={(e) => onChangeSearchText(e.target.value)}
           defaultValue={searchText}
           className="w-full bg-zinc-900 text-sky-300 rounded-lg border border-sky-300 px-4 py-3 hover:border-sky-700"
