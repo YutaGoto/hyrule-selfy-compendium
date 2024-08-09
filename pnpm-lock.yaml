@@ -46,8 +46,8 @@ importers:
         specifier: ^8.2.7
         version: 8.2.7(react@18.3.1)(storybook@8.2.7(@babel/preset-env@7.24.5(@babel/core@7.24.5)))
       '@storybook/addon-onboarding':
-        specifier: ^8.1.11
-        version: 8.1.11(react@18.3.1)
+        specifier: ^8.2.7
+        version: 8.2.7(react@18.3.1)(storybook@8.2.7(@babel/preset-env@7.24.5(@babel/core@7.24.5)))
       '@storybook/blocks':
         specifier: ^8.2.7
         version: 8.2.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.2.7(@babel/preset-env@7.24.5(@babel/core@7.24.5)))
@@ -1326,8 +1326,10 @@ packages:
     peerDependencies:
       storybook: ^8.2.7
 
-  '@storybook/addon-onboarding@8.1.11':
-    resolution: {integrity: sha512-oU9Tfnu3PlF71SC0chcDJs/i1MnpfQlB8GTN3TrlMzHXTwKJGz8XTdk2DQ0DB+YPo44Mhg2EavBXeBw6W2EF2g==}
+  '@storybook/addon-onboarding@8.2.7':
+    resolution: {integrity: sha512-YgpQY0uhYRi+3vny2BjnFlY19ga9/GGZlcFTfaf2wCO7KhjXdES3bp4VTtdNkAwbVaXYY+b33ERd4x1UQ7jSkA==}
+    peerDependencies:
+      storybook: ^8.2.7
 
   '@storybook/addon-outline@8.2.7':
     resolution: {integrity: sha512-oFSo3o5eEUSsdGUSPV22pGoJ5lL0PGcqjcee2hyl0Rc60ovsnB1BEGOoaGk7/bmkywMxRZm8D6j85V8HftA/kg==}
@@ -6059,9 +6061,10 @@ snapshots:
       storybook: 8.2.7(@babel/preset-env@7.24.5(@babel/core@7.24.5))
       tiny-invariant: 1.3.3
 
-  '@storybook/addon-onboarding@8.1.11(react@18.3.1)':
+  '@storybook/addon-onboarding@8.2.7(react@18.3.1)(storybook@8.2.7(@babel/preset-env@7.24.5(@babel/core@7.24.5)))':
     dependencies:
       react-confetti: 6.1.0(react@18.3.1)
+      storybook: 8.2.7(@babel/preset-env@7.24.5(@babel/core@7.24.5))
     transitivePeerDependencies:
       - react
 
