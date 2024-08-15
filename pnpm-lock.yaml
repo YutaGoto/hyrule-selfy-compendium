@@ -40,8 +40,8 @@ importers:
         specifier: ^8.2.9
         version: 8.2.9(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5)))
       '@storybook/addon-interactions':
-        specifier: ^8.2.8
-        version: 8.2.8(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5)))
+        specifier: ^8.2.9
+        version: 8.2.9(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5)))
       '@storybook/addon-links':
         specifier: ^8.2.9
         version: 8.2.9(react@18.3.1)(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5)))
@@ -1307,10 +1307,10 @@ packages:
     peerDependencies:
       storybook: ^8.2.9
 
-  '@storybook/addon-interactions@8.2.8':
-    resolution: {integrity: sha512-ggctlrSlK72xMfhviHHRslZF5tr9aHr1VFwCG/tjF7s1lM3S7OGqgHLJpcja/wNREvq9GMEvX95ZSu5NMh5CtA==}
+  '@storybook/addon-interactions@8.2.9':
+    resolution: {integrity: sha512-oSxBkqpmp1Vm9v/G8mZeFNXD8k6T1NMgzUWzAx7R5m31rfObhoi5Fo1bKQT5BAhSSsdjjd7owTAFKdhwSotSKg==}
     peerDependencies:
-      storybook: ^8.2.8
+      storybook: ^8.2.9
 
   '@storybook/addon-links@8.2.9':
     resolution: {integrity: sha512-RhJzUNdDb7lbliwXb64HMwieIeJ+OQ2Ditue1vmSox6NsSd+pshR+okHpAyoP1+fW+dahNENwAS2Kt2QiI78FA==}
@@ -1464,11 +1464,6 @@ packages:
   '@storybook/instrumenter@8.1.11':
     resolution: {integrity: sha512-r/U9hcqnodNMHuzRt1g56mWrVsDazR85Djz64M3KOwBhrTj5d46DF4/EE80w/5zR5JOrT7p8WmjJRowiVteOCQ==}
 
-  '@storybook/instrumenter@8.2.8':
-    resolution: {integrity: sha512-6Gk3CzoYQQXBXpW86PKqYSozOB/C9dSYiFvwPRo4XsEfjARDi8yglqkbOtG+FVqKDL66I5krcveB8bTWigqc9g==}
-    peerDependencies:
-      storybook: ^8.2.8
-
   '@storybook/instrumenter@8.2.9':
     resolution: {integrity: sha512-+DNjTbsMzlDggsvkhRuOy7aGvQJ4oLCPgunP5Se/3yBjG+M2bYDa0EmC5jC2nwZ3ffpuvbzaVe7fWf7R8W9F2Q==}
     peerDependencies:
@@ -1602,11 +1597,6 @@ packages:
 
   '@storybook/test@8.1.11':
     resolution: {integrity: sha512-k+V3HemF2/I8fkRxRqM8uH8ULrpBSAAdBOtWSHWLvHguVcb2YA4g4kKo6tXBB9256QfyDW4ZiaAj0/9TMxmJPQ==}
-
-  '@storybook/test@8.2.8':
-    resolution: {integrity: sha512-Lbt4DHP8WhnakTPw981kP85DeoONKN+zVLjFPa5ptllyT+jazZANjIdGhNUlBdIzOw3oyDXhGlWIdtqztS3pSA==}
-    peerDependencies:
-      storybook: ^8.2.8
 
   '@storybook/test@8.2.9':
     resolution: {integrity: sha512-O5JZ5S8UVVR7V0ru5AiF/uRO+srAVwji0Iik7ihy8gw3V91WQNMmJh2KkdhG0R1enYeBsYZlipOm+AW7f/MmOA==}
@@ -6038,11 +6028,11 @@ snapshots:
       '@storybook/global': 5.0.0
       storybook: 8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5))
 
-  '@storybook/addon-interactions@8.2.8(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5)))':
+  '@storybook/addon-interactions@8.2.9(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5)))':
     dependencies:
       '@storybook/global': 5.0.0
-      '@storybook/instrumenter': 8.2.8(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5)))
-      '@storybook/test': 8.2.8(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5)))
+      '@storybook/instrumenter': 8.2.9(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5)))
+      '@storybook/test': 8.2.9(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5)))
       polished: 4.3.1
       storybook: 8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5))
       ts-dedent: 2.2.0
@@ -6529,13 +6519,6 @@ snapshots:
       '@vitest/utils': 1.6.0
       util: 0.12.5
 
-  '@storybook/instrumenter@8.2.8(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5)))':
-    dependencies:
-      '@storybook/global': 5.0.0
-      '@vitest/utils': 1.6.0
-      storybook: 8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5))
-      util: 0.12.5
-
   '@storybook/instrumenter@8.2.9(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5)))':
     dependencies:
       '@storybook/global': 5.0.0
@@ -6926,24 +6909,6 @@ snapshots:
       '@testing-library/user-event': 14.5.2(@testing-library/dom@10.1.0)
       '@vitest/expect': 1.6.0
       '@vitest/spy': 1.6.0
-      util: 0.12.5
-    transitivePeerDependencies:
-      - '@jest/globals'
-      - '@types/bun'
-      - '@types/jest'
-      - jest
-      - vitest
-
-  '@storybook/test@8.2.8(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5)))':
-    dependencies:
-      '@storybook/csf': 0.1.11
-      '@storybook/instrumenter': 8.2.8(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5)))
-      '@testing-library/dom': 10.1.0
-      '@testing-library/jest-dom': 6.4.5
-      '@testing-library/user-event': 14.5.2(@testing-library/dom@10.1.0)
-      '@vitest/expect': 1.6.0
-      '@vitest/spy': 1.6.0
-      storybook: 8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5))
       util: 0.12.5
     transitivePeerDependencies:
       - '@jest/globals'
