@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
-    "@chromatic-com/playwright": "0.6.18",
+    "@chromatic-com/playwright": "0.7.0",
     "@playwright/test": "1.47.0",
     "@storybook/addon-essentials": "^8.2.9",
     "@storybook/addon-interactions": "^8.2.9",
