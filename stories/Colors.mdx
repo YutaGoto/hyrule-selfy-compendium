@@ -1,0 +1,46 @@
+import {
+  Canvas,
+  Meta,
+  Story,
+  ColorPalette,
+  ColorItem,
+} from "@storybook/addon-docs";
+
+import resolveConfig from "tailwindcss/resolveConfig";
+import tailwindConfig from "../tailwind.config";
+
+export const fullConfig = resolveConfig(tailwindConfig);
+export const colors = fullConfig.theme.accentColor;
+
+<Meta title="Colors" />
+
+# Base
+
+<ColorPalette>
+  <ColorItem
+    title="Background"
+    subtitle="zinc-900"
+    colors={{ base: colors.zinc[900] }}
+  />
+  <ColorItem
+    title="Text"
+    subtitle="sky-300"
+    colors={{ normal: colors.sky[300], hover: colors.black }}
+  />
+  <ColorItem
+    title="Border"
+    subtitle="sky-300"
+    colors={{ normal: colors.sky[300], hover: colors.sky[700] }}
+  />
+
+</ColorPalette>
+
+# Vercel colors
+
+<ColorPalette>
+  <ColorItem title="Pink" colors={{ pink: colors.vercel.pink }} />
+  <ColorItem title="Blue" colors={{ blue: colors.vercel.blue }} />
+  <ColorItem title="Cyan" colors={{ cyan: colors.vercel.cyan }} />
+  <ColorItem title="Orange" colors={{ orange: colors.vercel.orange }} />
+  <ColorItem title="Violet" colors={{ violet: colors.vercel.violet }} />
+</ColorPalette>
