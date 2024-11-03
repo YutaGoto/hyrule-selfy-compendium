@@ -49,8 +49,8 @@ importers:
         specifier: ^8.3.3
         version: 8.3.3(react@18.3.1)(storybook@8.3.6)
       '@storybook/blocks':
-        specifier: ^8.2.9
-        version: 8.2.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.6)
+        specifier: ^8.3.6
+        version: 8.3.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.6)
       '@storybook/nextjs':
         specifier: ^8.2.9
         version: 8.2.9(esbuild@0.20.2)(next@14.2.13(@babel/core@7.24.5)(@playwright/test@1.48.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.78.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.78.0)(storybook@8.3.6)(type-fest@2.19.0)(typescript@5.6.3)(webpack-hot-middleware@2.26.1)(webpack@5.95.0(esbuild@0.20.2))
@@ -1325,24 +1325,24 @@ packages:
     peerDependencies:
       storybook: ^8.3.3
 
-  '@storybook/blocks@8.2.9':
-    resolution: {integrity: sha512-5276q/s/UL8arwftuBXovUNHqYo/HPQFMGXEmjVVAMXUyFjzEAfKj3+xU897J6AuL+7XVZG32WnqA+X6LJMrcQ==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-      storybook: ^8.2.9
-    peerDependenciesMeta:
-      react:
-        optional: true
-      react-dom:
-        optional: true
-
   '@storybook/blocks@8.3.3':
     resolution: {integrity: sha512-8Vsvxqstop3xfbsx3Dn1nEjyxvQUcOYd8vpxyp2YumxYO8FlXIRuYL6HAkYbcX8JexsKvCZYxor52D2vUGIKZg==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
       storybook: ^8.3.3
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+
+  '@storybook/blocks@8.3.6':
+    resolution: {integrity: sha512-Oc5jU6EzfsENjrd91KcKyEKBh60RT+8uyLi1RIrymC2C/mzZMTEoNIrbnQt0eIqbjlHxn6y9JMJxHu4NJ4EmZg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+      storybook: ^8.3.6
     peerDependenciesMeta:
       react:
         optional: true
@@ -1424,13 +1424,6 @@ packages:
 
   '@storybook/icons@1.2.12':
     resolution: {integrity: sha512-UxgyK5W3/UV4VrI3dl6ajGfHM4aOqMAkFLWe2KibeQudLf6NJpDrDMSHwZj+3iKC4jFU7dkKbbtH2h/al4sW3Q==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-
-  '@storybook/icons@1.2.9':
-    resolution: {integrity: sha512-cOmylsz25SYXaJL/gvTk/dl3pyk7yBFRfeXTsHvTA3dfhoU/LWSq0NKL9nM7WBasJyn6XPSGnLS4RtKXLw5EUg==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -5700,11 +5693,11 @@ snapshots:
       memoizerific: 1.11.3
       storybook: 8.3.6
 
-  '@storybook/blocks@8.2.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.6)':
+  '@storybook/blocks@8.3.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.6)':
     dependencies:
       '@storybook/csf': 0.1.11
       '@storybook/global': 5.0.0
-      '@storybook/icons': 1.2.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@storybook/icons': 1.2.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/lodash': 4.14.202
       color-convert: 2.0.1
       dequal: 2.0.3
@@ -5721,7 +5714,7 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@storybook/blocks@8.3.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.6)':
+  '@storybook/blocks@8.3.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.3.6)':
     dependencies:
       '@storybook/csf': 0.1.11
       '@storybook/global': 5.0.0
@@ -6035,11 +6028,6 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@storybook/icons@1.2.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-
   '@storybook/instrumenter@8.2.9(storybook@8.3.6)':
     dependencies:
       '@storybook/global': 5.0.0
@@ -6054,7 +6042,7 @@ snapshots:
       '@storybook/core-events': 8.1.9
       '@storybook/csf': 0.1.11
       '@storybook/global': 5.0.0
-      '@storybook/icons': 1.2.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@storybook/icons': 1.2.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/router': 8.1.9
       '@storybook/theming': 8.1.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/types': 8.1.9
