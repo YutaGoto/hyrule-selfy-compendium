@@ -5,6 +5,8 @@ import type { Metadata } from 'next';
 import { headers } from 'next/headers';
 import Image from 'next/image';
 
+type SearchParams = Promise<{ [key: string]: string | undefined }>;
+
 export async function generateMetadata(): Promise<Metadata> {
   const filePath = '/og-image.jpg';
   const title = '自撮りハイラル図鑑';
@@ -14,49 +16,39 @@ export async function generateMetadata(): Promise<Metadata> {
     title: title,
     description: 'ブレスオブザワイルドの自撮りハイラル図鑑',
     openGraph: {
-      images: [`https://${headersInstance.get('host')}${filePath}`],
+      images: [`https://${(await headersInstance).get('host')}${filePath}`],
     },
   };
 }
 
 interface Props {
-  searchParams: {
-    location: string | undefined;
-    category: string | undefined;
-    searchText: string | undefined;
-  };
+  searchParams: SearchParams;
 }
 
-export default function Page({ searchParams }: Props) {
+export default async function Page({ searchParams }: Props) {
+  const { loc, category, searchText } = await searchParams;
+
+  console.log(loc, category, searchText);
+
   const filteredItems = items.filter((item) => {
     // SearchParams(location, category, searchText)からアイテムを絞り込む
     // どれも指定されていない場合は全てのアイテムを表示する
-    if (
-      !searchParams.location &&
-      !searchParams.category &&
-      !searchParams.searchText
-    ) {
+    if (!loc && !category && !searchText) {
       return true;
     }
 
     // 指定された場所のアイテムのみ絞り込む
-    if (
-      searchParams.location &&
-      !item.locations?.flat().includes(searchParams.location)
-    ) {
+    if (loc && !item.locations?.flat().includes(loc)) {
       return false;
     }
 
     // 指定された種類のアイテムのみ絞り込む
-    if (searchParams.category && searchParams.category !== item.category) {
+    if (category && category !== item.category) {
       return false;
     }
 
     // 指定された検索ワードを含むアイテムのみ絞り込む
-    if (
-      searchParams.searchText &&
-      !item.name.includes(searchParams.searchText)
-    ) {
+    if (searchText && !item.name.includes(searchText)) {
       return false;
     }
 

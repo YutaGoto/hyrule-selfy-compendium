@@ -16,16 +16,16 @@ import { Button } from '@/ui/Button';
 import { Tag } from '@/ui/Tag';
 import { locationText } from '@/utils/locationText';
 
+type Params = Promise<{ id: string }>;
+
 interface ItemProps {
-  params: {
-    id: string;
-  };
+  params: Params;
 }
 
 export async function generateMetadata({
   params,
 }: ItemProps): Promise<Metadata> {
-  const id = params.id;
+  const id = (await params).id;
 
   const item = items.find((x) => x.id === id);
   const filePath = id ? `/assets/images/${id}.jpg` : '/og-image.jpg';
@@ -40,25 +40,26 @@ export async function generateMetadata({
     description: 'ブレスオブザワイルドの自撮りハイラル図鑑',
     openGraph: {
       type: 'website',
-      images: [`https://${headersInstance.get('host')}${filePath}`],
+      images: [`https://${(await headersInstance).get('host')}${filePath}`],
     },
     twitter: {
       title: title,
       description: 'ブレスオブザワイルドの自撮りハイラル図鑑',
       card: 'summary_large_image',
       creator: '@gggooottto',
-      images: [`https://${headersInstance.get('host')}${filePath}`],
+      images: [`https://${(await headersInstance).get('host')}${filePath}`],
     },
   };
 }
 
-export default function Item({ params }: ItemProps) {
-  const item = items.find((x) => x.id === params.id);
+export default async function Item({ params }: ItemProps) {
+  const id = (await params).id;
+  const item = items.find((x) => x.id === id);
   const prevItem = items.find(
-    (x) => x.id === String(Number(params.id) - 1).padStart(3, '0'),
+    (x) => x.id === String(Number(id) - 1).padStart(3, '0'),
   );
   const nextItem = items.find(
-    (x) => x.id === String(Number(params.id) + 1).padStart(3, '0'),
+    (x) => x.id === String(Number(id) + 1).padStart(3, '0'),
   );
 
   if (!item) {

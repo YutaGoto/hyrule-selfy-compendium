@@ -25,7 +25,7 @@ export const SearchForm = () => {
     const params = new URLSearchParams(searchParams);
     for (const option of locationOptions) {
       if (params.has(option)) {
-        params.set('location', option);
+        params.set('loc', option);
       }
     }
     for (const option of categoryOptions) {
@@ -66,9 +66,9 @@ export const SearchForm = () => {
       <label>
         <span className="text-sky-300">場所</span>
         <select
-          name="location"
-          onChange={(e) => updateSearchParams('location', e.target.value)}
-          value={selectedOptions.get('location') || ''}
+          name="loc"
+          onChange={(e) => updateSearchParams('loc', e.target.value)}
+          value={selectedOptions.get('loc') || ''}
           className="w-full bg-zinc-900 text-sky-300 rounded-lg border border-sky-300 px-4 py-3 hover:border-sky-700"
         >
           <option value="" />
