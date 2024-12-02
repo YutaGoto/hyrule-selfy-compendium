@@ -25,7 +25,7 @@
     "@playwright/test": "1.49.0",
     "@storybook/addon-essentials": "^8.4.6",
     "@storybook/addon-interactions": "^8.4.6",
-    "@storybook/addon-links": "^8.4.5",
+    "@storybook/addon-links": "^8.4.6",
     "@storybook/addon-onboarding": "^8.4.6",
     "@storybook/blocks": "^8.3.6",
     "@storybook/nextjs": "^8.4.6",
