@@ -67,8 +67,8 @@ importers:
         specifier: 0.5.10
         version: 0.5.10(tailwindcss@3.4.17)
       '@types/node':
-        specifier: ^22.10.7
-        version: 22.10.7
+        specifier: ^22.10.10
+        version: 22.10.10
       '@types/react':
         specifier: ^18.3.13
         version: 18.3.13
@@ -1766,11 +1766,11 @@ packages:
   '@types/mime@3.0.4':
     resolution: {integrity: sha512-iJt33IQnVRkqeqC7PzBHPTC6fDlRNRW8vjrgqtScAhrmMwe8c4Eo7+fUGTa+XdWrpEgpyKWMYmi2dIwMAYRzPw==}
 
-  '@types/node@18.19.33':
-    resolution: {integrity: sha512-NR9+KrpSajr2qBVp/Yt5TU/rp+b5Mayi3+OlMlcg2cVCfRmcG5PWZ7S4+MG9PZ5gWBoc9Pd0BKSRViuBCRPu0A==}
+  '@types/node@18.19.74':
+    resolution: {integrity: sha512-HMwEkkifei3L605gFdV+/UwtpxP6JSzM+xFk2Ia6DNFSwSVBRh9qp5Tgf4lNFOMfPVuU0WnkcWpXZpgn5ufO4A==}
 
-  '@types/node@22.10.7':
-    resolution: {integrity: sha512-V09KvXxFiutGp6B7XkpaDXlNadZxrzajcY50EuoLIpQ6WWYCSvf19lVIazzfIzQvhUN2HjX12spLojTnhuKlGg==}
+  '@types/node@22.10.10':
+    resolution: {integrity: sha512-X47y/mPNzxviAGY5TcYPtYL8JsY3kAq2n8fMmKoRCxq/c4v4pyGNCzM2R6+M5/umG4ZfHuT+sgqDYqWc9rJ6ww==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -5830,7 +5830,7 @@ snapshots:
       '@storybook/node-logger': 8.1.9
       '@storybook/preview': 8.1.9
       '@storybook/preview-api': 8.1.9
-      '@types/node': 18.19.33
+      '@types/node': 18.19.74
       '@types/semver': 7.5.8
       browser-assert: 1.2.1
       case-sensitive-paths-webpack-plugin: 2.4.0
@@ -5871,7 +5871,7 @@ snapshots:
   '@storybook/builder-webpack5@8.4.7(esbuild@0.20.2)(storybook@8.4.7(prettier@3.4.2))(typescript@5.7.3)':
     dependencies:
       '@storybook/core-webpack': 8.4.7(storybook@8.4.7(prettier@3.4.2))
-      '@types/node': 22.10.7
+      '@types/node': 22.10.10
       '@types/semver': 7.5.8
       browser-assert: 1.2.1
       case-sensitive-paths-webpack-plugin: 2.4.0
@@ -5989,7 +5989,7 @@ snapshots:
       '@storybook/types': 8.1.9
       '@types/detect-port': 1.3.5
       '@types/diff': 5.2.1
-      '@types/node': 18.19.33
+      '@types/node': 18.19.74
       '@types/pretty-hrtime': 1.0.3
       '@types/semver': 7.5.8
       better-opn: 3.0.2
@@ -6028,7 +6028,7 @@ snapshots:
       '@storybook/core-common': 8.1.9(prettier@3.4.2)
       '@storybook/node-logger': 8.1.9
       '@storybook/types': 8.1.9
-      '@types/node': 18.19.33
+      '@types/node': 18.19.74
       ts-dedent: 2.2.0
     transitivePeerDependencies:
       - encoding
@@ -6037,7 +6037,7 @@ snapshots:
 
   '@storybook/core-webpack@8.4.7(storybook@8.4.7(prettier@3.4.2))':
     dependencies:
-      '@types/node': 22.10.7
+      '@types/node': 22.10.10
       storybook: 8.4.7(prettier@3.4.2)
       ts-dedent: 2.2.0
 
@@ -6157,7 +6157,7 @@ snapshots:
       '@storybook/preset-react-webpack': 8.4.7(@storybook/test@8.4.7(storybook@8.4.7(prettier@3.4.2)))(esbuild@0.20.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.7(prettier@3.4.2))(typescript@5.7.3)
       '@storybook/react': 8.4.7(@storybook/test@8.4.7(storybook@8.4.7(prettier@3.4.2)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.7(prettier@3.4.2))(typescript@5.7.3)
       '@storybook/test': 8.4.7(storybook@8.4.7(prettier@3.4.2))
-      '@types/node': 22.10.7
+      '@types/node': 22.10.10
       '@types/semver': 7.5.8
       babel-loader: 9.1.3(@babel/core@7.24.5)(webpack@5.95.0(esbuild@0.20.2))
       css-loader: 6.8.1(webpack@5.95.0(esbuild@0.20.2))
@@ -6211,7 +6211,7 @@ snapshots:
       '@storybook/core-webpack': 8.4.7(storybook@8.4.7(prettier@3.4.2))
       '@storybook/react': 8.4.7(@storybook/test@8.4.7(storybook@8.4.7(prettier@3.4.2)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.7(prettier@3.4.2))(typescript@5.7.3)
       '@storybook/react-docgen-typescript-plugin': 1.0.6--canary.9.0c3f3b7.0(typescript@5.7.3)(webpack@5.95.0(esbuild@0.20.2))
-      '@types/node': 22.10.7
+      '@types/node': 22.10.10
       '@types/semver': 7.5.8
       find-up: 5.0.0
       magic-string: 0.30.10
@@ -6239,7 +6239,7 @@ snapshots:
       '@storybook/core-webpack': 8.1.9(prettier@3.4.2)
       '@storybook/global': 5.0.0
       '@storybook/server': 8.1.9
-      '@types/node': 18.19.33
+      '@types/node': 18.19.74
       safe-identifier: 0.4.2
       ts-dedent: 2.2.0
       yaml-loader: 0.8.1
@@ -6315,7 +6315,7 @@ snapshots:
       '@storybook/theming': 8.4.2(storybook@8.4.7(prettier@3.4.2))
       '@types/escodegen': 0.0.6
       '@types/estree': 0.0.51
-      '@types/node': 22.10.7
+      '@types/node': 22.10.10
       acorn: 7.4.1
       acorn-jsx: 5.3.2(acorn@7.4.1)
       acorn-walk: 7.2.0
@@ -6362,7 +6362,7 @@ snapshots:
       '@storybook/preset-server-webpack': 8.1.9(prettier@3.4.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/server': 8.1.9
       '@storybook/types': 8.1.9
-      '@types/node': 18.19.33
+      '@types/node': 18.19.74
     transitivePeerDependencies:
       - '@rspack/core'
       - '@swc/core'
@@ -6518,11 +6518,11 @@ snapshots:
   '@types/body-parser@1.19.5':
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 22.10.7
+      '@types/node': 22.10.10
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 22.10.7
+      '@types/node': 22.10.10
 
   '@types/detect-port@1.3.5': {}
 
@@ -6542,7 +6542,7 @@ snapshots:
 
   '@types/express-serve-static-core@4.17.41':
     dependencies:
-      '@types/node': 22.10.7
+      '@types/node': 22.10.10
       '@types/qs': 6.9.15
       '@types/range-parser': 1.2.7
       '@types/send': 0.17.4
@@ -6557,7 +6557,7 @@ snapshots:
   '@types/fs-extra@11.0.4':
     dependencies:
       '@types/jsonfile': 6.1.4
-      '@types/node': 22.10.7
+      '@types/node': 22.10.10
 
   '@types/html-minifier-terser@6.1.0': {}
 
@@ -6567,7 +6567,7 @@ snapshots:
 
   '@types/jsonfile@6.1.4':
     dependencies:
-      '@types/node': 22.10.7
+      '@types/node': 22.10.10
 
   '@types/mdx@2.0.13': {}
 
@@ -6575,11 +6575,11 @@ snapshots:
 
   '@types/mime@3.0.4': {}
 
-  '@types/node@18.19.33':
+  '@types/node@18.19.74':
     dependencies:
       undici-types: 5.26.5
 
-  '@types/node@22.10.7':
+  '@types/node@22.10.10':
     dependencies:
       undici-types: 6.20.0
 
@@ -6611,13 +6611,13 @@ snapshots:
   '@types/send@0.17.4':
     dependencies:
       '@types/mime': 1.3.5
-      '@types/node': 22.10.7
+      '@types/node': 22.10.10
 
   '@types/serve-static@1.15.5':
     dependencies:
       '@types/http-errors': 2.0.4
       '@types/mime': 3.0.4
-      '@types/node': 22.10.7
+      '@types/node': 22.10.10
 
   '@types/uuid@9.0.8': {}
 
@@ -8005,7 +8005,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 22.10.7
+      '@types/node': 22.10.10
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
