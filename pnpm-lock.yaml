@@ -16,10 +16,10 @@ importers:
         version: 2.2.0(react@18.3.1)
       '@vercel/analytics':
         specifier: 1.4.1
-        version: 1.4.1(next@15.1.6(@babel/core@7.24.5)(@playwright/test@1.49.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.83.4))(react@18.3.1)
+        version: 1.4.1(next@15.1.6(@babel/core@7.24.5)(@playwright/test@1.50.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.83.4))(react@18.3.1)
       next:
         specifier: ^15.1.6
-        version: 15.1.6(@babel/core@7.24.5)(@playwright/test@1.49.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.83.4)
+        version: 15.1.6(@babel/core@7.24.5)(@playwright/test@1.50.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.83.4)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -35,10 +35,10 @@ importers:
         version: 1.9.4
       '@chromatic-com/playwright':
         specifier: 0.10.2
-        version: 0.10.2(@playwright/test@1.49.1)(@types/react@18.3.13)(esbuild@0.24.2)(prettier@3.4.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+        version: 0.10.2(@playwright/test@1.50.1)(@types/react@18.3.13)(esbuild@0.24.2)(prettier@3.4.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
       '@playwright/test':
-        specifier: 1.49.1
-        version: 1.49.1
+        specifier: 1.50.1
+        version: 1.50.1
       '@storybook/addon-essentials':
         specifier: ^8.4.7
         version: 8.4.7(@types/react@18.3.13)(storybook@8.5.2(prettier@3.4.2))
@@ -56,7 +56,7 @@ importers:
         version: 8.4.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.5.2(prettier@3.4.2))
       '@storybook/nextjs':
         specifier: ^8.4.7
-        version: 8.4.7(esbuild@0.24.2)(next@15.1.6(@babel/core@7.24.5)(@playwright/test@1.49.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.83.4))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.83.4)(storybook@8.5.2(prettier@3.4.2))(type-fest@2.19.0)(typescript@5.7.3)(webpack-hot-middleware@2.26.1)(webpack@5.95.0(esbuild@0.24.2))
+        version: 8.4.7(esbuild@0.24.2)(next@15.1.6(@babel/core@7.24.5)(@playwright/test@1.50.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.83.4))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.83.4)(storybook@8.5.2(prettier@3.4.2))(type-fest@2.19.0)(typescript@5.7.3)(webpack-hot-middleware@2.26.1)(webpack@5.95.0(esbuild@0.24.2))
       '@storybook/react':
         specifier: ^8.3.6
         version: 8.3.6(@storybook/test@8.3.6(storybook@8.5.2(prettier@3.4.2)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.5.2(prettier@3.4.2))(typescript@5.7.3)
@@ -80,7 +80,7 @@ importers:
         version: 10.4.20(postcss@8.5.1)
       chromatic:
         specifier: 11.25.2
-        version: 11.25.2(@chromatic-com/playwright@0.10.2(@playwright/test@1.49.1)(@types/react@18.3.13)(esbuild@0.24.2)(prettier@3.4.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3))
+        version: 11.25.2(@chromatic-com/playwright@0.10.2(@playwright/test@1.50.1)(@types/react@18.3.13)(esbuild@0.24.2)(prettier@3.4.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3))
       postcss:
         specifier: ^8.5.1
         version: 8.5.1
@@ -1425,8 +1425,8 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@playwright/test@1.49.1':
-    resolution: {integrity: sha512-Ky+BVzPz8pL6PQxHqNRW1k3mIyv933LML7HktS8uik0bUXNCdPhoS/kLihiO1tMf/egaJb4IutXd7UywvXEW+g==}
+  '@playwright/test@1.50.1':
+    resolution: {integrity: sha512-Jii3aBg+CEDpgnuDxEp/h7BimHcUTDlpEtce89xEumlJ5ef2hqepZ+PWp1DDpYC/VO9fmWVI1IlEaoI5fK9FXQ==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -3727,13 +3727,13 @@ packages:
     resolution: {integrity: sha512-Ie9z/WINcxxLp27BKOCHGde4ITq9UklYKDzVo1nhk5sqGEXU3FpkwP5GM2voTGJkGd9B3Otl+Q4uwSOeSUtOBA==}
     engines: {node: '>=14.16'}
 
-  playwright-core@1.49.1:
-    resolution: {integrity: sha512-BzmpVcs4kE2CH15rWfzpjzVGhWERJfmnXmniSyKeRZUs9Ws65m+RGIi7mjJK/euCegfn3i7jvqWeWyHe9y3Vgg==}
+  playwright-core@1.50.1:
+    resolution: {integrity: sha512-ra9fsNWayuYumt+NiM069M6OkcRb1FZSK8bgi66AtpFoWkg2+y0bJSNmkFrWhMbEBbVKC/EruAHH3g0zmtwGmQ==}
     engines: {node: '>=18'}
     hasBin: true
 
-  playwright@1.49.1:
-    resolution: {integrity: sha512-VYL8zLoNTBxVOrJBbDuRgDWa3i+mfQgDTrL8Ah9QXZ7ax4Dsj0MSq5bYgytRnDVVe+njoKnfsYkH3HzqVj5UZA==}
+  playwright@1.50.1:
+    resolution: {integrity: sha512-G8rwsOQJ63XG6BbKj2w5rHeavFjy5zynBA9zsJMMtBoe/Uf757oG12NXz6e6OirF7RCrTVAKFXbLmn1RbL7Qaw==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -5473,10 +5473,10 @@ snapshots:
   '@biomejs/cli-win32-x64@1.9.4':
     optional: true
 
-  '@chromatic-com/playwright@0.10.2(@playwright/test@1.49.1)(@types/react@18.3.13)(esbuild@0.24.2)(prettier@3.4.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@chromatic-com/playwright@0.10.2(@playwright/test@1.50.1)(@types/react@18.3.13)(esbuild@0.24.2)(prettier@3.4.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
       '@chromaui/rrweb-snapshot': 2.0.0-alpha.17-noAbsolute
-      '@playwright/test': 1.49.1
+      '@playwright/test': 1.50.1
       '@segment/analytics-node': 1.3.0
       '@storybook/addon-essentials': 8.4.7(@types/react@18.3.13)(storybook@8.5.2(prettier@3.4.2))
       '@storybook/csf': 0.1.11
@@ -5888,9 +5888,9 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@playwright/test@1.49.1':
+  '@playwright/test@1.50.1':
     dependencies:
-      playwright: 1.49.1
+      playwright: 1.50.1
 
   '@pmmmwh/react-refresh-webpack-plugin@0.5.11(react-refresh@0.14.0)(type-fest@2.19.0)(webpack-hot-middleware@2.26.1)(webpack@5.95.0(esbuild@0.24.2))':
     dependencies:
@@ -6388,7 +6388,7 @@ snapshots:
 
   '@storybook/manager@8.1.9': {}
 
-  '@storybook/nextjs@8.4.7(esbuild@0.24.2)(next@15.1.6(@babel/core@7.24.5)(@playwright/test@1.49.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.83.4))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.83.4)(storybook@8.5.2(prettier@3.4.2))(type-fest@2.19.0)(typescript@5.7.3)(webpack-hot-middleware@2.26.1)(webpack@5.95.0(esbuild@0.24.2))':
+  '@storybook/nextjs@8.4.7(esbuild@0.24.2)(next@15.1.6(@babel/core@7.24.5)(@playwright/test@1.50.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.83.4))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.83.4)(storybook@8.5.2(prettier@3.4.2))(type-fest@2.19.0)(typescript@5.7.3)(webpack-hot-middleware@2.26.1)(webpack@5.95.0(esbuild@0.24.2))':
     dependencies:
       '@babel/core': 7.24.5
       '@babel/plugin-syntax-bigint': 7.8.3(@babel/core@7.24.5)
@@ -6415,7 +6415,7 @@ snapshots:
       find-up: 5.0.0
       image-size: 1.1.1
       loader-utils: 3.2.1
-      next: 15.1.6(@babel/core@7.24.5)(@playwright/test@1.49.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.83.4)
+      next: 15.1.6(@babel/core@7.24.5)(@playwright/test@1.50.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.83.4)
       node-polyfill-webpack-plugin: 2.0.1(webpack@5.95.0(esbuild@0.24.2))
       pnp-webpack-plugin: 1.7.0(typescript@5.7.3)
       postcss: 8.5.1
@@ -6872,9 +6872,9 @@ snapshots:
 
   '@types/uuid@9.0.8': {}
 
-  '@vercel/analytics@1.4.1(next@15.1.6(@babel/core@7.24.5)(@playwright/test@1.49.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.83.4))(react@18.3.1)':
+  '@vercel/analytics@1.4.1(next@15.1.6(@babel/core@7.24.5)(@playwright/test@1.50.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.83.4))(react@18.3.1)':
     optionalDependencies:
-      next: 15.1.6(@babel/core@7.24.5)(@playwright/test@1.49.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.83.4)
+      next: 15.1.6(@babel/core@7.24.5)(@playwright/test@1.50.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.83.4)
       react: 18.3.1
 
   '@vitest/expect@2.0.5':
@@ -7356,9 +7356,9 @@ snapshots:
     dependencies:
       readdirp: 4.0.2
 
-  chromatic@11.25.2(@chromatic-com/playwright@0.10.2(@playwright/test@1.49.1)(@types/react@18.3.13)(esbuild@0.24.2)(prettier@3.4.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)):
+  chromatic@11.25.2(@chromatic-com/playwright@0.10.2(@playwright/test@1.50.1)(@types/react@18.3.13)(esbuild@0.24.2)(prettier@3.4.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)):
     optionalDependencies:
-      '@chromatic-com/playwright': 0.10.2(@playwright/test@1.49.1)(@types/react@18.3.13)(esbuild@0.24.2)(prettier@3.4.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@chromatic-com/playwright': 0.10.2(@playwright/test@1.50.1)(@types/react@18.3.13)(esbuild@0.24.2)(prettier@3.4.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
 
   chrome-trace-event@1.0.3: {}
 
@@ -8485,7 +8485,7 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next@15.1.6(@babel/core@7.24.5)(@playwright/test@1.49.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.83.4):
+  next@15.1.6(@babel/core@7.24.5)(@playwright/test@1.50.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.83.4):
     dependencies:
       '@next/env': 15.1.6
       '@swc/counter': 0.1.3
@@ -8505,7 +8505,7 @@ snapshots:
       '@next/swc-linux-x64-musl': 15.1.6
       '@next/swc-win32-arm64-msvc': 15.1.6
       '@next/swc-win32-x64-msvc': 15.1.6
-      '@playwright/test': 1.49.1
+      '@playwright/test': 1.50.1
       sass: 1.83.4
       sharp: 0.33.5
     transitivePeerDependencies:
@@ -8734,11 +8734,11 @@ snapshots:
     dependencies:
       find-up: 6.3.0
 
-  playwright-core@1.49.1: {}
+  playwright-core@1.50.1: {}
 
-  playwright@1.49.1:
+  playwright@1.50.1:
     dependencies:
-      playwright-core: 1.49.1
+      playwright-core: 1.50.1
     optionalDependencies:
       fsevents: 2.3.2
 
