@@ -23,7 +23,7 @@
     "@biomejs/biome": "1.9.4",
     "@chromatic-com/playwright": "0.10.2",
     "@playwright/test": "1.50.1",
-    "@storybook/addon-essentials": "^8.4.7",
+    "@storybook/addon-essentials": "^8.5.2",
     "@storybook/addon-interactions": "^8.5.2",
     "@storybook/addon-links": "^8.4.7",
     "@storybook/addon-onboarding": "^8.5.2",
