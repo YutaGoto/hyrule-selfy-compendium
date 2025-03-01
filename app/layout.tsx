@@ -21,7 +21,7 @@ export default function RootLayout({
             {children}
           </div>
         </div>
-        <Footer reactVersion="18.2.0" nextVersion="14.1.0" />
+        <Footer reactVersion="18.3.1" nextVersion="15.1.6" />
         <Analytics />
       </body>
     </html>
