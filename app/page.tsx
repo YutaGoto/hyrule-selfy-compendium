@@ -28,8 +28,6 @@ interface Props {
 export default async function Page({ searchParams }: Props) {
   const { loc, category, searchText } = await searchParams;
 
-  console.log(loc, category, searchText);
-
   const filteredItems = items.filter((item) => {
     // SearchParams(location, category, searchText)からアイテムを絞り込む
     // どれも指定されていない場合は全てのアイテムを表示する
