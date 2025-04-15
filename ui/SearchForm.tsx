@@ -10,7 +10,7 @@ export const SearchForm = () => {
   const pathName = usePathname();
   const router = useRouter();
   const [searchText, setSearchText] = useState<string>(
-    searchParams.get('searchText') || '',
+    searchParams?.get('searchText') || '',
   );
 
   const locationOptions = locations;
@@ -22,6 +22,8 @@ export const SearchForm = () => {
   };
 
   const selectedOptions = useMemo<URLSearchParams>(() => {
+    if (!searchParams) return new URLSearchParams();
+
     const params = new URLSearchParams(searchParams);
     for (const option of locationOptions) {
       if (params.has(option)) {
@@ -38,6 +40,8 @@ export const SearchForm = () => {
 
   const updateSearchParams = useCallback(
     (name: string, value: string) => {
+      if (!searchParams) return;
+
       const params = new URLSearchParams(searchParams);
       params.set(name, value);
       router.push(`${pathName}?${params.toString()}`);
