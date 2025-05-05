@@ -34,8 +34,8 @@ importers:
         specifier: 1.9.4
         version: 1.9.4
       '@chromatic-com/playwright':
-        specifier: 0.12.1
-        version: 0.12.1(@playwright/test@1.52.0)(@types/react@18.3.13)(esbuild@0.25.2)(prettier@3.5.1)(typescript@5.8.3)
+        specifier: 0.12.2
+        version: 0.12.2(@playwright/test@1.52.0)(@types/react@18.3.13)(esbuild@0.25.2)(prettier@3.5.1)(typescript@5.8.3)
       '@playwright/test':
         specifier: 1.52.0
         version: 1.52.0
@@ -80,7 +80,7 @@ importers:
         version: 18.3.1
       chromatic:
         specifier: 11.28.2
-        version: 11.28.2(@chromatic-com/playwright@0.12.1(@playwright/test@1.52.0)(@types/react@18.3.13)(esbuild@0.25.2)(prettier@3.5.1)(typescript@5.8.3))
+        version: 11.28.2(@chromatic-com/playwright@0.12.2(@playwright/test@1.52.0)(@types/react@18.3.13)(esbuild@0.25.2)(prettier@3.5.1)(typescript@5.8.3))
       postcss:
         specifier: ^8.5.3
         version: 8.5.3
@@ -729,8 +729,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@chromatic-com/playwright@0.12.1':
-    resolution: {integrity: sha512-kNhkfA31hbp70tP4wS+rnTwO/bNjUAWdteOsJectp1b3xgPBuhzJLqu1yMO32bIFTpi9cqj/sx6IiAeA4ydyYg==}
+  '@chromatic-com/playwright@0.12.2':
+    resolution: {integrity: sha512-bGWcd0Yhg0yoNs3X2V9VDYLWSjYYHgH0K//p5KhhjcFUNXa91swtBky5lLXXtiVRU5Z3btGB6nXWacIjLwXj4A==}
     hasBin: true
     peerDependencies:
       '@playwright/test': ^1.0.0
@@ -3754,9 +3754,6 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  tailwindcss@4.1.4:
-    resolution: {integrity: sha512-1ZIUqtPITFbv/DxRmDr5/agPqJwF69d24m9qmM1939TJehgY539CtzeZRjbLt5G6fSy/7YqqYsfvoTEw9xUI2A==}
-
   tailwindcss@4.1.5:
     resolution: {integrity: sha512-nYtSPfWGDiWgCkwQG/m+aX83XCwf62sBgg3bIlNiiOcggnS1x3uVRDAuyelBFL+vJdOPPCGElxv9DjHJjRHiVA==}
 
@@ -4779,7 +4776,7 @@ snapshots:
   '@biomejs/cli-win32-x64@1.9.4':
     optional: true
 
-  '@chromatic-com/playwright@0.12.1(@playwright/test@1.52.0)(@types/react@18.3.13)(esbuild@0.25.2)(prettier@3.5.1)(typescript@5.8.3)':
+  '@chromatic-com/playwright@0.12.2(@playwright/test@1.52.0)(@types/react@18.3.13)(esbuild@0.25.2)(prettier@3.5.1)(typescript@5.8.3)':
     dependencies:
       '@chromaui/rrweb-snapshot': 2.0.0-alpha.17-noAbsolute
       '@playwright/test': 1.52.0
@@ -6371,9 +6368,9 @@ snapshots:
     dependencies:
       readdirp: 4.1.2
 
-  chromatic@11.28.2(@chromatic-com/playwright@0.12.1(@playwright/test@1.52.0)(@types/react@18.3.13)(esbuild@0.25.2)(prettier@3.5.1)(typescript@5.8.3)):
+  chromatic@11.28.2(@chromatic-com/playwright@0.12.2(@playwright/test@1.52.0)(@types/react@18.3.13)(esbuild@0.25.2)(prettier@3.5.1)(typescript@5.8.3)):
     optionalDependencies:
-      '@chromatic-com/playwright': 0.12.1(@playwright/test@1.52.0)(@types/react@18.3.13)(esbuild@0.25.2)(prettier@3.5.1)(typescript@5.8.3)
+      '@chromatic-com/playwright': 0.12.2(@playwright/test@1.52.0)(@types/react@18.3.13)(esbuild@0.25.2)(prettier@3.5.1)(typescript@5.8.3)
 
   chrome-trace-event@1.0.4: {}
 
@@ -7959,8 +7956,6 @@ snapshots:
       has-flag: 4.0.0
 
   supports-preserve-symlinks-flag@1.0.0: {}
-
-  tailwindcss@4.1.4: {}
 
   tailwindcss@4.1.5: {}
 
