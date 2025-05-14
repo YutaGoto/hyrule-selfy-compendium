@@ -34,8 +34,8 @@ importers:
         specifier: 1.9.4
         version: 1.9.4
       '@chromatic-com/playwright':
-        specifier: 0.12.2
-        version: 0.12.2(@playwright/test@1.52.0)(@types/react@18.3.13)(esbuild@0.25.2)(prettier@3.5.1)(typescript@5.8.3)
+        specifier: 0.12.3
+        version: 0.12.3(@playwright/test@1.52.0)(@types/react@18.3.13)(esbuild@0.25.2)(prettier@3.5.1)(typescript@5.8.3)
       '@playwright/test':
         specifier: 1.52.0
         version: 1.52.0
@@ -80,7 +80,7 @@ importers:
         version: 18.3.1
       chromatic:
         specifier: 11.28.2
-        version: 11.28.2(@chromatic-com/playwright@0.12.2(@playwright/test@1.52.0)(@types/react@18.3.13)(esbuild@0.25.2)(prettier@3.5.1)(typescript@5.8.3))
+        version: 11.28.2(@chromatic-com/playwright@0.12.3(@playwright/test@1.52.0)(@types/react@18.3.13)(esbuild@0.25.2)(prettier@3.5.1)(typescript@5.8.3))
       postcss:
         specifier: ^8.5.3
         version: 8.5.3
@@ -729,14 +729,14 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@chromatic-com/playwright@0.12.2':
-    resolution: {integrity: sha512-bGWcd0Yhg0yoNs3X2V9VDYLWSjYYHgH0K//p5KhhjcFUNXa91swtBky5lLXXtiVRU5Z3btGB6nXWacIjLwXj4A==}
+  '@chromatic-com/playwright@0.12.3':
+    resolution: {integrity: sha512-H/os4WuIq1RqkTnMmKJmKPXaguAhlIUkdeUyn/deNUtnab0RAgbIdChoa9blBqCEQ0pJzvl9EzVh11Cmr6AR7g==}
     hasBin: true
     peerDependencies:
       '@playwright/test': ^1.0.0
 
-  '@chromaui/rrweb-snapshot@2.0.0-alpha.17-noAbsolute':
-    resolution: {integrity: sha512-8jV8EyLA6s8mLGy+eLLGlve7BEjzdnyrJDBu34D405eYUtazzyP+cG4nOvylYyfR+/RkUhJ/GXeB+hbg8au62A==}
+  '@chromaui/rrweb-snapshot@2.0.0-alpha.18-noAbsolute':
+    resolution: {integrity: sha512-glB+dgHTLLiDS8ljwYDBb2EPNe/sPxz2uOWjm11PoDYmVw204VKzyq07jredeHs9nUocb47RyDcZWCa5Cbw3yw==}
 
   '@emnapi/runtime@1.4.1':
     resolution: {integrity: sha512-LMshMVP0ZhACNjQNYXiU1iZJ6QCcv0lUdPDPugqGvCGXt5xtRVBPdtA0qU12pEXZzpWAhWlZYptfdAFq10DOVQ==}
@@ -3775,9 +3775,6 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  tailwindcss@4.1.5:
-    resolution: {integrity: sha512-nYtSPfWGDiWgCkwQG/m+aX83XCwf62sBgg3bIlNiiOcggnS1x3uVRDAuyelBFL+vJdOPPCGElxv9DjHJjRHiVA==}
-
   tailwindcss@4.1.6:
     resolution: {integrity: sha512-j0cGLTreM6u4OWzBeLBpycK0WIh8w7kSwcUsQZoGLHZ7xDTdM69lN64AgoIEEwFi0tnhs4wSykUa5YWxAzgFYg==}
 
@@ -4808,9 +4805,9 @@ snapshots:
   '@biomejs/cli-win32-x64@1.9.4':
     optional: true
 
-  '@chromatic-com/playwright@0.12.2(@playwright/test@1.52.0)(@types/react@18.3.13)(esbuild@0.25.2)(prettier@3.5.1)(typescript@5.8.3)':
+  '@chromatic-com/playwright@0.12.3(@playwright/test@1.52.0)(@types/react@18.3.13)(esbuild@0.25.2)(prettier@3.5.1)(typescript@5.8.3)':
     dependencies:
-      '@chromaui/rrweb-snapshot': 2.0.0-alpha.17-noAbsolute
+      '@chromaui/rrweb-snapshot': 2.0.0-alpha.18-noAbsolute
       '@playwright/test': 1.52.0
       '@segment/analytics-node': 1.3.0
       '@storybook/addon-essentials': 8.6.12(@types/react@18.3.13)(storybook@8.6.12(prettier@3.5.1))
@@ -4833,7 +4830,7 @@ snapshots:
       - utf-8-validate
       - webpack-cli
 
-  '@chromaui/rrweb-snapshot@2.0.0-alpha.17-noAbsolute':
+  '@chromaui/rrweb-snapshot@2.0.0-alpha.18-noAbsolute':
     dependencies:
       postcss: 8.5.3
 
@@ -6412,9 +6409,9 @@ snapshots:
 
   chownr@3.0.0: {}
 
-  chromatic@11.28.2(@chromatic-com/playwright@0.12.2(@playwright/test@1.52.0)(@types/react@18.3.13)(esbuild@0.25.2)(prettier@3.5.1)(typescript@5.8.3)):
+  chromatic@11.28.2(@chromatic-com/playwright@0.12.3(@playwright/test@1.52.0)(@types/react@18.3.13)(esbuild@0.25.2)(prettier@3.5.1)(typescript@5.8.3)):
     optionalDependencies:
-      '@chromatic-com/playwright': 0.12.2(@playwright/test@1.52.0)(@types/react@18.3.13)(esbuild@0.25.2)(prettier@3.5.1)(typescript@5.8.3)
+      '@chromatic-com/playwright': 0.12.3(@playwright/test@1.52.0)(@types/react@18.3.13)(esbuild@0.25.2)(prettier@3.5.1)(typescript@5.8.3)
 
   chrome-trace-event@1.0.4: {}
 
@@ -8008,8 +8005,6 @@ snapshots:
       has-flag: 4.0.0
 
   supports-preserve-symlinks-flag@1.0.0: {}
-
-  tailwindcss@4.1.5: {}
 
   tailwindcss@4.1.6: {}
 
