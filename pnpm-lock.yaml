@@ -52,8 +52,8 @@ importers:
         specifier: ^8.6.14
         version: 8.6.14(storybook@8.6.14(prettier@3.5.1))
       '@storybook/blocks':
-        specifier: ^8.6.12
-        version: 8.6.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.6.14(prettier@3.5.1))
+        specifier: ^8.6.14
+        version: 8.6.14(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.6.14(prettier@3.5.1))
       '@storybook/nextjs':
         specifier: ^8.6.14
         version: 8.6.14(esbuild@0.25.4)(next@15.3.2(@babel/core@7.27.1)(@playwright/test@1.52.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.89.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.89.0)(storybook@8.6.14(prettier@3.5.1))(type-fest@2.19.0)(typescript@5.8.3)(webpack-hot-middleware@2.26.1)(webpack@5.99.8(esbuild@0.25.4))
@@ -1461,6 +1461,18 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       storybook: ^8.6.12
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+
+  '@storybook/blocks@8.6.14':
+    resolution: {integrity: sha512-rBMHAfA39AGHgkrDze4RmsnQTMw1ND5fGWobr9pDcJdnDKWQWNRD7Nrlxj0gFlN3n4D9lEZhWGdFrCbku7FVAQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      storybook: ^8.6.14
     peerDependenciesMeta:
       react:
         optional: true
@@ -5454,6 +5466,15 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
 
   '@storybook/blocks@8.6.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.6.14(prettier@3.5.1))':
+    dependencies:
+      '@storybook/icons': 1.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      storybook: 8.6.14(prettier@3.5.1)
+      ts-dedent: 2.2.0
+    optionalDependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  '@storybook/blocks@8.6.14(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.6.14(prettier@3.5.1))':
     dependencies:
       '@storybook/icons': 1.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       storybook: 8.6.14(prettier@3.5.1)
