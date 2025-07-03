@@ -1,8 +1,8 @@
 import '@/styles/globals.scss';
 
-import { Footer } from '@/ui/Footer';
 import { Analytics } from '@vercel/analytics/react';
 import type React from 'react';
+import { Footer } from '@/ui/Footer';
 
 export default function RootLayout({
   children,
