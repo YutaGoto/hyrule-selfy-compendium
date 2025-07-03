@@ -1,9 +1,9 @@
 'use client';
 
-import { categories } from '@/lib/categories';
-import { locations } from '@/lib/locations';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useCallback, useMemo, useState } from 'react';
+import { categories } from '@/lib/categories';
+import { locations } from '@/lib/locations';
 
 export const SearchForm = () => {
   const searchParams = useSearchParams();

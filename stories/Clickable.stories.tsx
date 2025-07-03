@@ -1,5 +1,5 @@
-import { Clickable } from '@/ui/Clickable';
 import type { Meta, StoryObj } from '@storybook/react';
+import { Clickable } from '@/ui/Clickable';
 
 const meta: Meta<typeof Clickable> = {
   title: 'Clickable',
