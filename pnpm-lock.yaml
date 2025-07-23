@@ -18,8 +18,8 @@ importers:
         specifier: 1.5.0
         version: 1.5.0(next@15.3.5(@babel/core@7.27.1)(@playwright/test@1.54.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.89.2))(react@18.3.1)
       botid:
-        specifier: 1.4.3
-        version: 1.4.3(next@15.3.5(@babel/core@7.27.1)(@playwright/test@1.54.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.89.2))(react@18.3.1)
+        specifier: 1.4.4
+        version: 1.4.4(next@15.3.5(@babel/core@7.27.1)(@playwright/test@1.54.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.89.2))(react@18.3.1)
       next:
         specifier: ^15.3.5
         version: 15.3.5(@babel/core@7.27.1)(@playwright/test@1.54.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.89.2)
@@ -2322,8 +2322,8 @@ packages:
   boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
 
-  botid@1.4.3:
-    resolution: {integrity: sha512-/fMHAfcf1Z1o7gg/4DBdoINjn0x7PxydJ99GWwBzXzAX2D2aSGk6O2vk4b0uEIY1/eFxD4eYE7StaYJL1oi+0A==}
+  botid@1.4.4:
+    resolution: {integrity: sha512-srandpZ5upyMRzT9ZD0yXW0o/e1LfPLghBjCOBgYPvqgYE6yjXp5xxzqdwe8zNvyA7hIxGc252G34fRfE5ySHQ==}
     peerDependencies:
       next: '*'
       react: ^18.0.0 || ^19.0.0
@@ -6703,7 +6703,7 @@ snapshots:
 
   boolbase@1.0.0: {}
 
-  botid@1.4.3(next@15.3.5(@babel/core@7.27.1)(@playwright/test@1.54.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.89.2))(react@18.3.1):
+  botid@1.4.4(next@15.3.5(@babel/core@7.27.1)(@playwright/test@1.54.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.89.2))(react@18.3.1):
     optionalDependencies:
       next: 15.3.5(@babel/core@7.27.1)(@playwright/test@1.54.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.89.2)
       react: 18.3.1
