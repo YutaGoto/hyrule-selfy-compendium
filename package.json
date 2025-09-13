@@ -47,6 +47,11 @@
   "pnpm": {
     "overrides": {
       "path-to-regexp@<0.1.12": ">=0.1.12"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "@tailwindcss/oxide",
+      "esbuild",
+      "sharp"
+    ]
   }
 }
