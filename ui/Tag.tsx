@@ -61,7 +61,7 @@ const tagVariants = cva(
 );
 
 export interface TagProps
-  extends HTMLAttributes<HTMLDivElement>,
+  extends HTMLAttributes<HTMLSpanElement>,
     VariantProps<typeof tagVariants> {}
 
 const Tag = ({ className, variant, size, children, ...props }: TagProps) => {
