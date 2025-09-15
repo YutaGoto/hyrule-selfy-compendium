@@ -111,7 +111,11 @@ export default async function Item({ params }: ItemProps) {
                   <div className="mt-2 text-center">
                     <p className="text-2xl">ドロップアイテム</p>
                     {item.recoverableMaterials.map((material) => {
-                      return <Tag key={material} text={material} />;
+                      return (
+                        <Tag key={material} variant="indigo">
+                          {material}
+                        </Tag>
+                      );
                     })}
                   </div>
                 )}
