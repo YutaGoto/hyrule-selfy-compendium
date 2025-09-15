@@ -64,9 +64,11 @@ export interface TagProps
   extends HTMLAttributes<HTMLDivElement>,
     VariantProps<typeof tagVariants> {}
 
-const Tag = ({ className, variant, size, ...props }: TagProps) => {
+const Tag = ({ className, variant, size, children, ...props }: TagProps) => {
   return (
-    <div className={cn(tagVariants({ variant, size }), className)} {...props} />
+    <span className={cn(tagVariants({ variant, size }), className)} {...props}>
+      {children}
+    </span>
   );
 };
 
