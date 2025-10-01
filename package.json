@@ -42,7 +42,7 @@
     "sass": "1.92.1",
     "storybook": "^8.6.14",
     "tailwindcss": "^4.1.14",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
   "pnpm": {
     "overrides": {
