@@ -16,13 +16,13 @@ importers:
         version: 2.2.0(react@18.3.1)
       '@vercel/analytics':
         specifier: 1.5.0
-        version: 1.5.0(next@15.5.4(@babel/core@7.27.1)(@playwright/test@1.55.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.92.1))(react@18.3.1)
+        version: 1.5.0(next@15.5.4(@babel/core@7.27.1)(@playwright/test@1.55.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.93.2))(react@18.3.1)
       botid:
         specifier: 1.5.7
-        version: 1.5.7(next@15.5.4(@babel/core@7.27.1)(@playwright/test@1.55.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.92.1))(react@18.3.1)
+        version: 1.5.7(next@15.5.4(@babel/core@7.27.1)(@playwright/test@1.55.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.93.2))(react@18.3.1)
       next:
         specifier: ^15.5.4
-        version: 15.5.4(@babel/core@7.27.1)(@playwright/test@1.55.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.92.1)
+        version: 15.5.4(@babel/core@7.27.1)(@playwright/test@1.55.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.93.2)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -59,7 +59,7 @@ importers:
         version: 8.6.14(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.6.14(prettier@3.5.1))
       '@storybook/nextjs':
         specifier: ^8.6.14
-        version: 8.6.14(esbuild@0.25.4)(next@15.5.4(@babel/core@7.27.1)(@playwright/test@1.55.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.92.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.92.1)(storybook@8.6.14(prettier@3.5.1))(type-fest@2.19.0)(typescript@5.9.3)(webpack-hot-middleware@2.26.1)(webpack@5.101.3(esbuild@0.25.4))
+        version: 8.6.14(esbuild@0.25.4)(next@15.5.4(@babel/core@7.27.1)(@playwright/test@1.55.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.93.2))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.93.2)(storybook@8.6.14(prettier@3.5.1))(type-fest@2.19.0)(typescript@5.9.3)(webpack-hot-middleware@2.26.1)(webpack@5.101.3(esbuild@0.25.4))
       '@storybook/react':
         specifier: ^8.3.6
         version: 8.3.6(@storybook/test@8.3.6(storybook@8.6.14(prettier@3.5.1)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.6.14(prettier@3.5.1))(typescript@5.9.3)
@@ -88,8 +88,8 @@ importers:
         specifier: ^8.5.6
         version: 8.5.6
       sass:
-        specifier: 1.92.1
-        version: 1.92.1
+        specifier: 1.93.2
+        version: 1.93.2
       storybook:
         specifier: ^8.6.14
         version: 8.6.14(prettier@3.5.1)
@@ -3913,8 +3913,8 @@ packages:
       webpack:
         optional: true
 
-  sass@1.92.1:
-    resolution: {integrity: sha512-ffmsdbwqb3XeyR8jJR6KelIXARM9bFQe8A6Q3W4Klmwy5Ckd5gz7jgUNHo4UOqutU5Sk1DtKLbpDP0nLCg1xqQ==}
+  sass@1.93.2:
+    resolution: {integrity: sha512-t+YPtOQHpGW1QWsh1CHQ5cPIr9lbbGZLZnbihP/D/qZj/yuV68m8qarcV17nvkOX81BCrvzAlq2klCQFZghyTg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -6111,7 +6111,7 @@ snapshots:
     dependencies:
       storybook: 8.6.14(prettier@3.5.1)
 
-  '@storybook/nextjs@8.6.14(esbuild@0.25.4)(next@15.5.4(@babel/core@7.27.1)(@playwright/test@1.55.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.92.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.92.1)(storybook@8.6.14(prettier@3.5.1))(type-fest@2.19.0)(typescript@5.9.3)(webpack-hot-middleware@2.26.1)(webpack@5.101.3(esbuild@0.25.4))':
+  '@storybook/nextjs@8.6.14(esbuild@0.25.4)(next@15.5.4(@babel/core@7.27.1)(@playwright/test@1.55.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.93.2))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.93.2)(storybook@8.6.14(prettier@3.5.1))(type-fest@2.19.0)(typescript@5.9.3)(webpack-hot-middleware@2.26.1)(webpack@5.101.3(esbuild@0.25.4))':
     dependencies:
       '@babel/core': 7.27.1
       '@babel/plugin-syntax-bigint': 7.8.3(@babel/core@7.27.1)
@@ -6137,7 +6137,7 @@ snapshots:
       find-up: 5.0.0
       image-size: 1.2.1
       loader-utils: 3.3.1
-      next: 15.5.4(@babel/core@7.27.1)(@playwright/test@1.55.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.92.1)
+      next: 15.5.4(@babel/core@7.27.1)(@playwright/test@1.55.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.93.2)
       node-polyfill-webpack-plugin: 2.0.1(webpack@5.101.3(esbuild@0.25.4))
       pnp-webpack-plugin: 1.7.0(typescript@5.9.3)
       postcss: 8.5.6
@@ -6146,7 +6146,7 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       react-refresh: 0.14.2
       resolve-url-loader: 5.0.0
-      sass-loader: 14.2.1(sass@1.92.1)(webpack@5.101.3(esbuild@0.25.4))
+      sass-loader: 14.2.1(sass@1.93.2)(webpack@5.101.3(esbuild@0.25.4))
       semver: 7.7.2
       storybook: 8.6.14(prettier@3.5.1)
       style-loader: 3.3.4(webpack@5.101.3(esbuild@0.25.4))
@@ -6546,9 +6546,9 @@ snapshots:
 
   '@types/uuid@9.0.8': {}
 
-  '@vercel/analytics@1.5.0(next@15.5.4(@babel/core@7.27.1)(@playwright/test@1.55.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.92.1))(react@18.3.1)':
+  '@vercel/analytics@1.5.0(next@15.5.4(@babel/core@7.27.1)(@playwright/test@1.55.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.93.2))(react@18.3.1)':
     optionalDependencies:
-      next: 15.5.4(@babel/core@7.27.1)(@playwright/test@1.55.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.92.1)
+      next: 15.5.4(@babel/core@7.27.1)(@playwright/test@1.55.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.93.2)
       react: 18.3.1
 
   '@vitest/expect@2.0.5':
@@ -6827,9 +6827,9 @@ snapshots:
 
   boolbase@1.0.0: {}
 
-  botid@1.5.7(next@15.5.4(@babel/core@7.27.1)(@playwright/test@1.55.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.92.1))(react@18.3.1):
+  botid@1.5.7(next@15.5.4(@babel/core@7.27.1)(@playwright/test@1.55.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.93.2))(react@18.3.1):
     optionalDependencies:
-      next: 15.5.4(@babel/core@7.27.1)(@playwright/test@1.55.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.92.1)
+      next: 15.5.4(@babel/core@7.27.1)(@playwright/test@1.55.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.93.2)
       react: 18.3.1
 
   brace-expansion@1.1.12:
@@ -7978,7 +7978,7 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next@15.5.4(@babel/core@7.27.1)(@playwright/test@1.55.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.92.1):
+  next@15.5.4(@babel/core@7.27.1)(@playwright/test@1.55.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.93.2):
     dependencies:
       '@next/env': 15.5.4
       '@swc/helpers': 0.5.15
@@ -7997,7 +7997,7 @@ snapshots:
       '@next/swc-win32-arm64-msvc': 15.5.4
       '@next/swc-win32-x64-msvc': 15.5.4
       '@playwright/test': 1.55.1
-      sass: 1.92.1
+      sass: 1.93.2
       sharp: 0.34.4
     transitivePeerDependencies:
       - '@babel/core'
@@ -8469,14 +8469,14 @@ snapshots:
 
   safe-identifier@0.4.2: {}
 
-  sass-loader@14.2.1(sass@1.92.1)(webpack@5.101.3(esbuild@0.25.4)):
+  sass-loader@14.2.1(sass@1.93.2)(webpack@5.101.3(esbuild@0.25.4)):
     dependencies:
       neo-async: 2.6.2
     optionalDependencies:
-      sass: 1.92.1
+      sass: 1.93.2
       webpack: 5.101.3(esbuild@0.25.4)
 
-  sass@1.92.1:
+  sass@1.93.2:
     dependencies:
       chokidar: 4.0.3
       immutable: 5.1.3
