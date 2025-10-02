@@ -82,8 +82,8 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1
       chromatic:
-        specifier: 13.1.5
-        version: 13.1.5(@chromatic-com/playwright@0.12.7(@playwright/test@1.55.1)(@types/react@18.3.13)(esbuild@0.25.4)(prettier@3.5.1)(typescript@5.9.3))
+        specifier: 13.3.0
+        version: 13.3.0(@chromatic-com/playwright@0.12.7(@playwright/test@1.55.1)(@types/react@18.3.13)(esbuild@0.25.4)(prettier@3.5.1)(typescript@5.9.3))
       postcss:
         specifier: ^8.5.6
         version: 8.5.6
@@ -2498,8 +2498,8 @@ packages:
     resolution: {integrity: sha512-+IxzY9BZOQd/XuYPRmrvEVjF/nqj5kgT4kEq7VofrDoM1MxoRjEWkrCC3EtLi59TVawxTAn+orJwFQcrqEN1+g==}
     engines: {node: '>=18'}
 
-  chromatic@13.1.5:
-    resolution: {integrity: sha512-xYVcgC3Ian/WDW9UZXGTBKfDUySqGronhuMS+UkzdoWiBO9DTO/kwMAC0i1tjiA0Fzw8A6aGWBB4PwHFZCCa9g==}
+  chromatic@13.3.0:
+    resolution: {integrity: sha512-OtXVKSFqGS1x6E6xYzmYX2iImSknbvo5CfTxP3ztFvXQhIAwhJzJuA3XpnIewER9gtWUNnV2DDi8/f9JyZJSfg==}
     hasBin: true
     peerDependencies:
       '@chromatic-com/cypress': ^0.*.* || ^1.0.0
@@ -6995,7 +6995,7 @@ snapshots:
 
   chownr@3.0.0: {}
 
-  chromatic@13.1.5(@chromatic-com/playwright@0.12.7(@playwright/test@1.55.1)(@types/react@18.3.13)(esbuild@0.25.4)(prettier@3.5.1)(typescript@5.9.3)):
+  chromatic@13.3.0(@chromatic-com/playwright@0.12.7(@playwright/test@1.55.1)(@types/react@18.3.13)(esbuild@0.25.4)(prettier@3.5.1)(typescript@5.9.3)):
     optionalDependencies:
       '@chromatic-com/playwright': 0.12.7(@playwright/test@1.55.1)(@types/react@18.3.13)(esbuild@0.25.4)(prettier@3.5.1)(typescript@5.9.3)
 
