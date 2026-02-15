@@ -9,7 +9,7 @@ export const Footer = () => {
   const nextVersion = nextPackage.version;
 
   return (
-    <footer className="flex flex-col items-center text-sky-300 text-xs mb-4 space-y-4">
+    <footer className="mb-4 flex flex-col items-center space-y-4 text-sky-300 text-xs">
       <style jsx>
         {`
           .power-by {

@@ -56,7 +56,7 @@ export default async function Page({ searchParams }: Props) {
   return (
     <>
       <SearchForm />
-      <div className="grid xl:grid-cols-4 lg:grid-cols-3 grid-flow-row gap-4 justify-items-center text-sky-300 md:grid-cols-2 sm:grid-cols-1">
+      <div className="grid grid-flow-row justify-items-center gap-4 text-sky-300 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {filteredItems.map((item) => {
           return (
             <div key={item.id} className="w-64">
@@ -67,7 +67,7 @@ export default async function Page({ searchParams }: Props) {
               >
                 <div>
                   <div className="text-center">{item.name}</div>
-                  <div className="overflow-hidden w-48 h-48 text-center">
+                  <div className="h-48 w-48 overflow-hidden text-center">
                     <Image
                       src={`/assets/images/${item.id}.jpg`}
                       alt={item.name}

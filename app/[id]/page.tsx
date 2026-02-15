@@ -70,8 +70,8 @@ export default async function Item({ params }: ItemProps) {
     <section>
       <div className="text-sky-300">
         <div className="space-y-6">
-          <div className="grid grid-flow-row-dense lg:grid-cols-9 md:grid-cols-1 gap-3 justify-items-center">
-            <div className="lg:col-span-4 md:col-span-1 lg:w-96 h-96 relative overflow-hidden">
+          <div className="grid grid-flow-row-dense justify-items-center gap-3 md:grid-cols-1 lg:grid-cols-9">
+            <div className="relative h-96 overflow-hidden md:col-span-1 lg:col-span-4 lg:w-96">
               <Image
                 src={`/assets/images/${item.id}.jpg`}
                 alt={item.name}
@@ -85,11 +85,11 @@ export default async function Item({ params }: ItemProps) {
               />
             </div>
 
-            <div className="lg:col-span-5 md:col-span-1">
-              <div className="text-xl text-center mb-2">
+            <div className="md:col-span-1 lg:col-span-5">
+              <div className="mb-2 text-center text-xl">
                 {item.name} <span className="text-xs">No. {item.id}</span>
               </div>
-              <div className="text-xl break-all whitespace-pre-wrap">
+              <div className="whitespace-pre-wrap break-all text-xl">
                 {item.description}
               </div>
 
@@ -123,7 +123,7 @@ export default async function Item({ params }: ItemProps) {
                 {item.heartsRecoverable && (
                   <div className="mt-2 text-center">
                     <p className="text-2xl">回復量</p>
-                    <div className="text-xl flex items-center justify-center">
+                    <div className="flex items-center justify-center text-xl">
                       <div>
                         <HeartIcon className="h-6 w-6" />
                       </div>
@@ -135,7 +135,7 @@ export default async function Item({ params }: ItemProps) {
                 {item.cookingEffect && (
                   <div className="mt-2 text-center">
                     <p className="text-2xl">料理したときの効果</p>
-                    <div className="text-xl flex items-center justify-center">
+                    <div className="flex items-center justify-center text-xl">
                       <div>{item.cookingEffect}</div>
                     </div>
                   </div>
@@ -144,7 +144,7 @@ export default async function Item({ params }: ItemProps) {
                 {item.properties && (
                   <div className="mt-2 text-center">
                     <p className="text-2xl">性能</p>
-                    <div className="text-xl flex items-center justify-center">
+                    <div className="flex items-center justify-center text-xl">
                       <div>
                         {item.properties.type === 'sword' && (
                           <WrenchIcon className="h-6 w-6" />
@@ -168,7 +168,7 @@ export default async function Item({ params }: ItemProps) {
                 {item.additionalEffect && (
                   <div className="mt-2 text-center">
                     <p className="text-2xl">追加効果</p>
-                    <div className="text-xl flex items-center justify-center">
+                    <div className="flex items-center justify-center text-xl">
                       <div>{item.additionalEffect}</div>
                     </div>
                   </div>

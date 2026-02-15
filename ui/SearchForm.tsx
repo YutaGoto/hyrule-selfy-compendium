@@ -50,14 +50,14 @@ export const SearchForm = () => {
   );
 
   return (
-    <div className="mb-3 px-4 py-3 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 justify-items-center border border-white/10">
+    <div className="mb-3 grid justify-items-center border border-white/10 px-4 py-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
       <label>
         <span className="text-sky-300">種類</span>
         <select
           name="category"
           onChange={(e) => updateSearchParams('category', e.target.value)}
           value={selectedOptions.get('category') || ''}
-          className="w-full bg-zinc-900 text-sky-300 rounded-lg border border-sky-300 px-4 py-3 hover:border-sky-700"
+          className="w-full rounded-lg border border-sky-300 bg-zinc-900 px-4 py-3 text-sky-300 hover:border-sky-700"
         >
           <option value="" />
           {categoryOptions.map((option) => (
@@ -73,7 +73,7 @@ export const SearchForm = () => {
           name="loc"
           onChange={(e) => updateSearchParams('loc', e.target.value)}
           value={selectedOptions.get('loc') || ''}
-          className="w-full bg-zinc-900 text-sky-300 rounded-lg border border-sky-300 px-4 py-3 hover:border-sky-700"
+          className="w-full rounded-lg border border-sky-300 bg-zinc-900 px-4 py-3 text-sky-300 hover:border-sky-700"
         >
           <option value="" />
           {locationOptions.map((option) => (
@@ -90,7 +90,7 @@ export const SearchForm = () => {
           name="freeword"
           onChange={(e) => onChangeSearchText(e.target.value)}
           defaultValue={searchText}
-          className="w-full bg-zinc-900 text-sky-300 rounded-lg border border-sky-300 px-4 py-3 hover:border-sky-700"
+          className="w-full rounded-lg border border-sky-300 bg-zinc-900 px-4 py-3 text-sky-300 hover:border-sky-700"
         />
       </label>
     </div>

@@ -13,7 +13,7 @@ export const Button = ({ children, href, onClick }: ButtonLinkProps) => {
     return (
       <Linkable
         href={href}
-        className="flex items-center justify-center border border-sky-300 p-3 hover:bg-sky-300 hover:text-black transition-colors ease-in delay-25"
+        className="flex items-center justify-center border border-sky-300 p-3 transition-colors delay-25 ease-in hover:bg-sky-300 hover:text-black"
       >
         {children}
       </Linkable>
@@ -24,7 +24,7 @@ export const Button = ({ children, href, onClick }: ButtonLinkProps) => {
     <Clickable
       buttonType="button"
       onClick={onClick}
-      className="flex items-center justify-center border border-sky-300 p-3 hover:bg-sky-300 hover:text-black transition-colors ease-in delay-25"
+      className="flex items-center justify-center border border-sky-300 p-3 transition-colors delay-25 ease-in hover:bg-sky-300 hover:text-black"
     >
       {children}
     </Clickable>
