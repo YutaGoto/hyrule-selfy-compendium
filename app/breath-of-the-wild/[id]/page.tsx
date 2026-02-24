@@ -180,7 +180,7 @@ export default async function Item({ params }: ItemProps) {
         <div className="my-6">
           <div className="flex flex-row justify-center space-x-4">
             {prevItem && (
-              <Button href={`/${prevItem.id}`}>
+              <Button href={`/breath-of-the-wild/${prevItem.id}`}>
                 <span>
                   <ChevronDoubleLeftIcon className="h-6 w-6" />
                 </span>
@@ -188,7 +188,7 @@ export default async function Item({ params }: ItemProps) {
               </Button>
             )}
             {nextItem && (
-              <Button href={`/${nextItem.id}`}>
+              <Button href={`/breath-of-the-wild/${nextItem.id}`}>
                 <span>{nextItem.name}</span>
                 <span>
                   <ChevronDoubleRightIcon className="h-6 w-6" />
