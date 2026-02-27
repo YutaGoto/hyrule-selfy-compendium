@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import { headers } from 'next/headers';
 import Image from 'next/image';
-import { items } from '@/lib/items';
+import { items } from '@/lib/botw/items';
 import { Linkable } from '@/ui/Linkable';
 import { SearchForm } from '@/ui/SearchForm';
 
 type SearchParams = Promise<{ [key: string]: string | undefined }>;
 
 export async function generateMetadata(): Promise<Metadata> {
-  const filePath = '/og-image.jpg';
-  const title = '自撮りハイラル図鑑';
+  const filePath = '/botw.jpg';
+  const title = 'ブレスオブザワイルド自撮りハイラル図鑑';
 
   const headersInstance = headers();
   return {
