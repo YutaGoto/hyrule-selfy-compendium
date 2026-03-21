@@ -15,4 +15,4 @@ export const items: Item[] = [
   ...bowsArrows,
   ...shields,
   ...treasures,
-];
+].sort((a, b) => Number(a.id) - Number(b.id));
