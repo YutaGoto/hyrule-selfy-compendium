@@ -5,7 +5,9 @@
       "**",
       "!**/.next/**/*",
       "!**/test-results/**/*",
-      "!**/next-env.d.ts"
+      "!**/next-env.d.ts",
+      "!**/storybook-static/**/*",
+      "!**/storybook-out/**/*"
     ]
   },
   "assist": {
