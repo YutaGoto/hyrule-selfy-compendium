@@ -8,7 +8,7 @@ import { SearchForm } from '@/ui/SearchForm';
 type SearchParams = Promise<{ [key: string]: string | undefined }>;
 
 export async function generateMetadata(): Promise<Metadata> {
-  const filePath = '/assets/totk.jpg';
+  const filePath = '/totk.jpeg';
   const title = 'ティアーズオブザキングダム自撮りハイラル図鑑';
 
   const headersInstance = headers();
