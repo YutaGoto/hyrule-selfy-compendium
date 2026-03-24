@@ -73,7 +73,6 @@ export default async function Page({ searchParams }: Props) {
                       alt={item.name}
                       style={{
                         objectPosition: '0px 13px',
-                        width: 'auto',
                       }}
                       width={192}
                       height={192}
