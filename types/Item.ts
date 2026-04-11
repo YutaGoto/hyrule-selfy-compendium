@@ -14,4 +14,5 @@ export type Item = {
   };
   additionalEffect?: string;
   cookingEffect?: string;
+  fuseAttackPower?: number;
 };

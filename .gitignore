@@ -27,6 +27,9 @@ yarn-error.log*
 # local env files
 .env*.local
 
+# log
+*.log
+
 # vercel
 .vercel
 
@@ -41,3 +44,7 @@ styles/dist.css
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# storybook
+.storybook-out
+storybook-static

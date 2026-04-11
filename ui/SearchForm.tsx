@@ -2,8 +2,8 @@
 
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useCallback, useMemo, useState } from 'react';
-import { categories } from '@/lib/categories';
-import { locations } from '@/lib/locations';
+import { categories } from '@/lib/botw/categories';
+import { locations } from '@/lib/botw/locations';
 
 export const SearchForm = () => {
   const searchParams = useSearchParams();
