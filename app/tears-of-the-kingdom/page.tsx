@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { items } from '@/lib/totk/items';
 import { Linkable } from '@/ui/Linkable';
 import { SearchForm } from '@/ui/SearchForm';
+import { getImageUrl } from '@/utils/getImageUrl';
 
 type SearchParams = Promise<{ [key: string]: string | undefined }>;
 
@@ -69,7 +70,7 @@ export default async function Page({ searchParams }: Props) {
                   <div className="text-center">{item.name}</div>
                   <div className="overflow-hidden w-48 h-48 text-center">
                     <Image
-                      src={`/assets/images/totk/${item.id}.jpg`}
+                      src={getImageUrl(`/assets/images/totk/${item.id}.jpg`)}
                       alt={item.name}
                       style={{
                         objectPosition: '0px 13px',

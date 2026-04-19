@@ -14,6 +14,7 @@ import { items } from '@/lib/totk/items';
 import { Button } from '@/ui/Button';
 import { ItemImage } from '@/ui/ItemImage';
 import { Tag } from '@/ui/Tag';
+import { getImageUrl } from '@/utils/getImageUrl';
 import { locationText } from '@/utils/locationText';
 
 type Params = Promise<{ id: string }>;
@@ -28,7 +29,9 @@ export async function generateMetadata({
   const id = (await params).id;
 
   const item = items.find((x) => x.id === id);
-  const filePath = id ? `/assets/images/totk/${id}.jpg` : '/totk.jpg';
+  const filePath = id
+    ? getImageUrl(`/assets/images/totk/${id}.jpg`)
+    : '/totk.jpg';
   const title = item
     ? `${item.name} - ティアーズオブザキングダム自撮りハイラル図鑑`
     : 'ティアーズオブザキングダム自撮りハイラル図鑑';

@@ -9,8 +9,14 @@ const nextConfig: NextConfig = {
   },
   output: 'standalone',
   images: {
-    loader: 'custom',
-    loaderFile: './utils/gcs-loader.ts',
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'storage.googleapis.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
   experimental: {},
 };

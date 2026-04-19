@@ -3,6 +3,7 @@
 import { XMarkIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import { getImageUrl } from '@/utils/getImageUrl';
 import { Clickable } from './Clickable';
 
 interface ItemImageProps {
@@ -34,7 +35,7 @@ export const ItemImage = ({ id, name }: ItemImageProps) => {
         className="group lg:col-span-4 md:col-span-1 lg:w-96 h-96 relative overflow-hidden focus:outline-none focus:ring-2 focus:ring-sky-300 rounded-lg shadow-xl"
       >
         <Image
-          src={`/assets/images/totk/${id}.jpg`}
+          src={getImageUrl(`/assets/images/totk/${id}.jpg`)}
           alt={name}
           style={{
             objectPosition: '0px 0px',
@@ -92,7 +93,7 @@ export const ItemImage = ({ id, name }: ItemImageProps) => {
           <div className="relative w-full h-[85vh] px-4 md:px-8 flex items-center justify-center pointer-events-none z-10">
             <div className="relative w-full h-full max-w-6xl">
               <Image
-                src={`/assets/images/totk/${id}.jpg`}
+                src={getImageUrl(`/assets/images/totk/${id}.jpg`)}
                 alt={name}
                 fill
                 style={{ objectFit: 'contain' }}
