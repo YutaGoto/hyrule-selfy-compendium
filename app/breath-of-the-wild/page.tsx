@@ -69,7 +69,7 @@ export default async function Page({ searchParams }: Props) {
                   <div className="text-center">{item.name}</div>
                   <div className="overflow-hidden w-48 h-48 text-center">
                     <Image
-                      src={`/assets/images/${item.id}.jpg`}
+                      src={`/assets/images/botw/${item.id}.jpg`}
                       alt={item.name}
                       style={{
                         objectPosition: '32px 18px',

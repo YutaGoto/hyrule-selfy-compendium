@@ -48,3 +48,6 @@ styles/dist.css
 # storybook
 .storybook-out
 storybook-static
+
+# cloudflare
+.wrangler

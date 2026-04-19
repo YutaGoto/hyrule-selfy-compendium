@@ -7,6 +7,11 @@ const nextConfig: NextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
+  output: 'standalone',
+  images: {
+    loader: 'custom',
+    loaderFile: './utils/gcs-loader.ts',
+  },
   experimental: {},
 };
 
