@@ -41,12 +41,12 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "chromatic": "16.0.0",
-    "postcss": "^8.5.9",
+    "postcss": "^8.5.10",
     "sass": "1.97.3",
-    "storybook": "^8.6.17",
+    "storybook": "^8.6.18",
     "tailwindcss": "^4.2.1",
     "typescript": "^5.9.3",
-    "webpack": "5.98.0"
+    "webpack": "5.104.1"
   },
   "pnpm": {
     "overrides": {
