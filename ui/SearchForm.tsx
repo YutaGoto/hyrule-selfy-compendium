@@ -36,7 +36,7 @@ export const SearchForm = () => {
       }
     }
     return params;
-  }, [searchParams, locationOptions, categoryOptions]);
+  }, [searchParams]);
 
   const updateSearchParams = useCallback(
     (name: string, value: string) => {
