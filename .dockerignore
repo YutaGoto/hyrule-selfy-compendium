@@ -1,0 +1,11 @@
+node_modules
+.next
+.git
+.gitignore
+.dockerignore
+LICENSE
+README.md
+Dockerfile
+.wrangler
+wrangler.toml
+pnpm-lock.yaml

@@ -14,6 +14,7 @@ import { notFound } from 'next/navigation';
 import { items } from '@/lib/botw/items';
 import { Button } from '@/ui/Button';
 import { Tag } from '@/ui/Tag';
+import { getImageUrl } from '@/utils/getImageUrl';
 import { locationText } from '@/utils/locationText';
 
 type Params = Promise<{ id: string }>;
@@ -28,7 +29,9 @@ export async function generateMetadata({
   const id = (await params).id;
 
   const item = items.find((x) => x.id === id);
-  const filePath = id ? `/assets/images/botw/${id}.jpg` : '/botw.jpg';
+  const filePath = id
+    ? getImageUrl(`/assets/images/botw/${id}.jpg`)
+    : '/botw.jpg';
   const title = item
     ? `${item.name} - ブレスオブザワイルド自撮りハイラル図鑑`
     : 'ブレスオブザワイルド自撮りハイラル図鑑';
@@ -73,7 +76,7 @@ export default async function Item({ params }: ItemProps) {
           <div className="grid grid-flow-row-dense lg:grid-cols-9 md:grid-cols-1 gap-3 justify-items-center">
             <div className="lg:col-span-4 md:col-span-1 lg:w-96 h-96 relative overflow-hidden">
               <Image
-                src={`/assets/images/botw/${item.id}.jpg`}
+                src={getImageUrl(`/assets/images/botw/${item.id}.jpg`)}
                 alt={item.name}
                 style={{
                   objectPosition: '63px 37px',
