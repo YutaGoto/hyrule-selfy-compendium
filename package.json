@@ -44,7 +44,7 @@
     "postcss": "^8.5.9",
     "sass": "1.97.3",
     "storybook": "^8.6.17",
-    "tailwindcss": "^4.2.1",
+    "tailwindcss": "^4.2.4",
     "typescript": "^5.9.3",
     "webpack": "5.106.1"
   },
