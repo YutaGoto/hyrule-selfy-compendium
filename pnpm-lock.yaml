@@ -91,8 +91,8 @@ importers:
         specifier: ^19.2.3
         version: 19.2.3(@types/react@19.2.14)
       chromatic:
-        specifier: 17.0.0
-        version: 17.0.0(@chromatic-com/playwright@0.13.2(@playwright/test@1.60.0)(@testing-library/dom@10.4.0)(prettier@3.5.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))
+        specifier: 17.5.0
+        version: 17.5.0(@chromatic-com/playwright@0.13.2(@playwright/test@1.60.0)(@testing-library/dom@10.4.0)(prettier@3.5.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))
       postcss:
         specifier: ^8.5.11
         version: 8.5.11
@@ -2362,8 +2362,8 @@ packages:
     resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
     engines: {node: '>= 14.16.0'}
 
-  chromatic@17.0.0:
-    resolution: {integrity: sha512-gYbIBg6IoqH9Ut+bVE5uTZmGzmv/aoHcFzAXaym08JZ7FkB3OSjxrq1xO/dhMPfMqpnwzycHZytYIp3N+IZr5w==}
+  chromatic@17.5.0:
+    resolution: {integrity: sha512-jYtXDaY1VeaNaWMom4HewLQTL574s4wTtkg5Kryov9Cj7D6i8Pe7twpLsetG7apxD0aITWUhx6KiqfN6p380rw==}
     engines: {node: '>=22.0.0'}
     hasBin: true
     peerDependencies:
@@ -3727,13 +3727,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  semver@7.8.0:
-    resolution: {integrity: sha512-AcM7dV/5ul4EekoQ29Agm5vri8JNqRyj39o0qpX6vDF2GZrtutZl5RwgD1XnZjiTAfncsJhMI48QQH3sN87YNA==}
-    engines: {node: '>=10'}
-    hasBin: true
-
-  semver@7.8.2:
-    resolution: {integrity: sha512-c8jsqUZm3omBOI66G90z1Dyw5z622G8oLG+omfsHBJf3CWQTlOcwOjvOG6wtiNfW6anKm/eA39LMwMtMez2TiQ==}
+  semver@7.8.5:
+    resolution: {integrity: sha512-Y7/KDsb8LjooZpwaqGyulO6DQlksgCncchHGk+sZIY4SBvUocMBEFH5Ur1fI4dV+Jvl0w6cjvucaIi40puRioA==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -5629,7 +5624,7 @@ snapshots:
       jsdoc-type-pratt-parser: 4.8.0
       process: 0.11.10
       recast: 0.23.11
-      semver: 7.8.0
+      semver: 7.8.5
       util: 0.12.5
       ws: 8.20.0
     optionalDependencies:
@@ -6486,9 +6481,9 @@ snapshots:
     dependencies:
       readdirp: 4.1.2
 
-  chromatic@17.0.0(@chromatic-com/playwright@0.13.2(@playwright/test@1.60.0)(@testing-library/dom@10.4.0)(prettier@3.5.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)):
+  chromatic@17.5.0(@chromatic-com/playwright@0.13.2(@playwright/test@1.60.0)(@testing-library/dom@10.4.0)(prettier@3.5.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)):
     dependencies:
-      semver: 7.8.0
+      semver: 7.8.5
     optionalDependencies:
       '@chromatic-com/playwright': 0.13.2(@playwright/test@1.60.0)(@testing-library/dom@10.4.0)(prettier@3.5.1)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
 
@@ -6946,7 +6941,7 @@ snapshots:
       minimatch: 3.1.5
       node-abort-controller: 3.1.1
       schema-utils: 3.3.0
-      semver: 7.7.4
+      semver: 7.8.5
       tapable: 2.3.3
       typescript: 6.0.3
       webpack: 5.106.2(esbuild@0.25.12)
@@ -7888,10 +7883,7 @@ snapshots:
 
   semver@7.7.4: {}
 
-  semver@7.8.0: {}
-
-  semver@7.8.2:
-    optional: true
+  semver@7.8.5: {}
 
   set-function-length@1.2.2:
     dependencies:
@@ -7941,7 +7933,7 @@ snapshots:
     dependencies:
       '@img/colour': 1.1.0
       detect-libc: 2.1.2
-      semver: 7.8.2
+      semver: 7.8.5
     optionalDependencies:
       '@img/sharp-darwin-arm64': 0.34.5
       '@img/sharp-darwin-x64': 0.34.5
