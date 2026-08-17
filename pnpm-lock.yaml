@@ -64,8 +64,8 @@ importers:
         specifier: 8.6.17
         version: 8.6.17(storybook@8.6.17(prettier@3.5.1))
       '@storybook/blocks':
-        specifier: 8.6.16
-        version: 8.6.16(react-dom@19.2.4(react@19.2.7))(react@19.2.7)(storybook@8.6.17(prettier@3.5.1))
+        specifier: 8.6.17
+        version: 8.6.17(react-dom@19.2.4(react@19.2.7))(react@19.2.7)(storybook@8.6.17(prettier@3.5.1))
       '@storybook/nextjs':
         specifier: 8.6.17
         version: 8.6.17(esbuild@0.25.12)(next@15.5.18(@babel/core@7.29.0)(@playwright/test@1.60.0)(react-dom@19.2.4(react@19.2.7))(react@19.2.7)(sass@1.101.0))(react-dom@19.2.4(react@19.2.7))(react@19.2.7)(sass@1.101.0)(storybook@8.6.17(prettier@3.5.1))(type-fest@2.19.0)(typescript@6.0.3)(webpack-hot-middleware@2.26.1)(webpack@5.106.2(esbuild@0.25.12))
@@ -1636,18 +1636,6 @@ packages:
     resolution: {integrity: sha512-gVUtbFQq/mpD5CFOqXGAu5hUpGm/t5G/psg3YsTjnaRBd18dJZ/+//HzZVbX9aEW8t5qTJeJcEYaF5463BVfNA==}
     peerDependencies:
       storybook: ^8.6.17
-
-  '@storybook/blocks@8.6.16':
-    resolution: {integrity: sha512-ohT+bdIsBB7CBAcfpLD/1svqQjFTNw9bsL0bDhQnqaFC9GpSSV2UK1Cu5qZfj9cpsjVL4lrFQOQDCxGcjGqIXQ==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-      storybook: ^8.6.16
-    peerDependenciesMeta:
-      react:
-        optional: true
-      react-dom:
-        optional: true
 
   '@storybook/blocks@8.6.17':
     resolution: {integrity: sha512-zuYHH+0egovMrjWRKwOtgVGbz6KALGowPSWBzQ8deTBu6IXfkz6Ce1hRLJPn5S6/jDqqr9xx8vuAiypnRQ98tA==}
@@ -5618,15 +5606,6 @@ snapshots:
     dependencies:
       memoizerific: 1.11.3
       storybook: 8.6.17(prettier@3.5.1)
-
-  '@storybook/blocks@8.6.16(react-dom@19.2.4(react@19.2.7))(react@19.2.7)(storybook@8.6.17(prettier@3.5.1))':
-    dependencies:
-      '@storybook/icons': 1.6.0(react-dom@19.2.4(react@19.2.7))(react@19.2.7)
-      storybook: 8.6.17(prettier@3.5.1)
-      ts-dedent: 2.2.0
-    optionalDependencies:
-      react: 19.2.7
-      react-dom: 19.2.4(react@19.2.7)
 
   '@storybook/blocks@8.6.17(react-dom@19.2.4(react@19.2.7))(react@19.2.7)(storybook@8.6.17(prettier@3.5.1))':
     dependencies:
