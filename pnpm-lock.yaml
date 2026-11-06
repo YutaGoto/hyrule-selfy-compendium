@@ -88,8 +88,8 @@ importers:
         specifier: ^19.2.3
         version: 19.2.3(@types/react@19.2.17)
       chromatic:
-        specifier: 17.5.0
-        version: 17.5.0(@chromatic-com/playwright@0.14.11(@playwright/test@1.62.1)(@testing-library/dom@10.4.0)(prettier@3.5.1)(react@19.2.7))
+        specifier: 18.13.9
+        version: 18.13.9(@chromatic-com/playwright@0.14.11(@playwright/test@1.62.1)(@testing-library/dom@10.4.0)(prettier@3.5.1)(react@19.2.7))
       postcss:
         specifier: ^8.5.29
         version: 8.5.29
@@ -2390,8 +2390,8 @@ packages:
     resolution: {integrity: sha512-TQMmc3w+5AxjpL8iIiwebF73dRDF4fBIieAqGn9RGCWaEVwQ6Fb2cGe31Yns0RRIzii5goJ1Y7xbMwo1TxMplw==}
     engines: {node: '>= 20.19.0'}
 
-  chromatic@17.5.0:
-    resolution: {integrity: sha512-jYtXDaY1VeaNaWMom4HewLQTL574s4wTtkg5Kryov9Cj7D6i8Pe7twpLsetG7apxD0aITWUhx6KiqfN6p380rw==}
+  chromatic@18.13.9:
+    resolution: {integrity: sha512-ZOHNPl0PsrJqEYl9mxOXrOWrGyJL7rmDLHQojf0zoxFrurneI1uW81BOI7PYHv6yeyV8NKCif2arYHGAmCR3LQ==}
     engines: {node: '>=22.0.0'}
     hasBin: true
     peerDependencies:
@@ -6543,7 +6543,7 @@ snapshots:
     dependencies:
       readdirp: 5.0.0
 
-  chromatic@17.5.0(@chromatic-com/playwright@0.14.11(@playwright/test@1.62.1)(@testing-library/dom@10.4.0)(prettier@3.5.1)(react@19.2.7)):
+  chromatic@18.13.9(@chromatic-com/playwright@0.14.11(@playwright/test@1.62.1)(@testing-library/dom@10.4.0)(prettier@3.5.1)(react@19.2.7)):
     dependencies:
       semver: 7.8.5
     optionalDependencies:
