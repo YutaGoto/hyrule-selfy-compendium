@@ -42,7 +42,7 @@
     "@types/react-dom": "^19.2.3",
     "chromatic": "17.5.0",
     "postcss": "^8.5.29",
-    "sass": "1.101.0",
+    "sass": "1.107.1",
     "storybook": "^8.6.17",
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3",
