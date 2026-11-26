@@ -46,7 +46,7 @@
     "storybook": "^8.6.19",
     "tailwindcss": "^4.3.3",
     "typescript": "^7.0.2",
-    "webpack": "5.106.2"
+    "webpack": "5.113.0"
   },
   "pnpm": {
     "overrides": {
